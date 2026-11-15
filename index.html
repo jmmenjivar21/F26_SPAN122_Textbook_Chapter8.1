@@ -1,0 +1,1932 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spanish 122 · Semana 9 · Capítulo 8.1 Relaciones y repaso · pretérito irregular, ser y estar, leyendas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Space+Mono:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+/* SPAN 122 · Semana 3 · Capítulo 5.2 · Imágenes (2)
+   gustar-type verbs · tener que · ordinals · weather, seasons, months · naturaleza · una receta */
+
+:root{
+  --navy:#1B2E4F; --navy-light:#2E4977;
+  --terracotta:#C45D3A; --terracotta-light:#E0876A;
+  --gold:#D4A24C; --gold-light:#EBC373;
+  --sage:#6E8C5F; --sage-light:#9CB590;
+  --cream:#FBF7EE; --cream-dark:#F0E9D8;
+  --text:#1a1a1a; --text-light:#444; --text-hint:#666;
+  --soft-shadow:0 4px 16px rgba(27,46,79,0.08);
+  --tile-shadow:0 2px 8px rgba(27,46,79,0.06);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Source Sans 3','Helvetica Neue',Helvetica,Arial,sans-serif;background:var(--cream);color:var(--text);line-height:1.55;font-size:16px;min-height:100vh;}
+.skip-link{position:absolute;left:-9999px;top:0;background:var(--navy);color:#fff;padding:10px 16px;z-index:9999;text-decoration:none;}
+.skip-link:focus{left:8px;top:8px;}
+*:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:4px;}
+.app{max-width:1200px;margin:0 auto;padding:0 20px 64px;position:relative;}
+.app::before{content:'8';position:fixed;top:18px;right:24px;z-index:0;font-family:'Playfair Display',serif;font-size:9rem;font-weight:800;color:var(--navy);opacity:0.04;pointer-events:none;line-height:1;}
+
+.chap-head{margin-top:36px;padding:32px 36px;border-radius:18px;background:linear-gradient(135deg,var(--navy) 0%,var(--navy-light) 100%);color:#fff;box-shadow:var(--soft-shadow);position:relative;overflow:hidden;}
+.chap-head::after{content:'';position:absolute;right:-40px;bottom:-40px;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,rgba(212,162,76,0.25),transparent 70%);}
+.header-badge{display:inline-block;font-family:'Space Mono',monospace;font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;background:rgba(212,162,76,0.22);color:var(--gold-light);padding:5px 12px;border-radius:20px;margin-bottom:10px;}
+.header-title{display:block;font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:700;line-height:1.15;margin-bottom:6px;}
+.header-subtitle{display:block;font-family:'Space Mono',monospace;font-size:0.85rem;letter-spacing:0.1em;color:var(--gold-light);text-transform:uppercase;}
+
+.prog-bar{height:8px;background:var(--cream-dark);border-radius:4px;margin:6px 0 0;overflow:hidden;}
+.prog-fill{height:100%;background:linear-gradient(90deg,var(--terracotta),var(--gold));width:0%;transition:width 0.6s ease-out;}
+.completion-wrap{margin:22px 0 20px;}
+.completion-top{display:flex;align-items:center;gap:12px;}
+.completion-label{font-family:'Space Mono',monospace;font-size:0.66rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-hint);}
+.completion-score{margin-left:auto;font-family:'Space Mono',monospace;font-size:0.72rem;font-weight:700;letter-spacing:0.04em;color:var(--sage);background:rgba(110,140,95,0.14);padding:4px 12px;border-radius:20px;white-space:nowrap;}
+.completion-pct{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;color:var(--terracotta);margin-left:14px;}
+.completion-legend{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;}
+.legend-pill{font-family:'Space Mono',monospace;font-size:0.6rem;letter-spacing:0.04em;padding:4px 10px;border-radius:20px;background:var(--cream-dark);color:var(--text-light);border:1px solid transparent;cursor:pointer;transition:all 0.2s;}
+.legend-pill:hover{background:#e6d9c2;color:var(--navy);}
+.legend-pill.done{background:rgba(110,140,95,0.18);border-color:var(--sage);color:var(--sage);}
+
+.submit-bar{background:var(--cream-dark);border-radius:12px;padding:14px 18px;margin-bottom:22px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+.submit-bar label{font-family:'Space Mono',monospace;font-size:0.66rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-light);}
+#studentName{flex:1;min-width:210px;border:2px solid #e2d5bd;border-radius:8px;background:#fff;padding:9px 13px;font-family:inherit;font-size:0.94rem;color:var(--navy);}
+#studentName:focus{outline:none;border-color:var(--gold);}
+.btn-download{background:var(--terracotta);color:#fff;border:none;border-radius:8px;padding:10px 20px;cursor:pointer;font-family:'Space Mono',monospace;font-size:0.7rem;letter-spacing:0.08em;text-transform:uppercase;transition:background 0.2s,transform 0.2s;}
+.btn-download:hover{background:var(--terracotta-light);transform:translateY(-1px);}
+.submit-hint{width:100%;font-family:'Space Mono',monospace;font-size:0.62rem;color:var(--text-hint);letter-spacing:0.04em;}
+
+.quiz-item{background:var(--cream);border-radius:12px;padding:16px 18px;margin-bottom:14px;border-left:4px solid var(--sage);}
+.quiz-item.correct{background:#eef6ea;border-left-color:var(--sage);}
+.quiz-item.wrong{background:#fbeceb;border-left-color:var(--terracotta);}
+.quiz-q{font-size:0.95rem;font-weight:700;color:var(--navy);margin-bottom:2px;}
+.quiz-q .qnum{font-family:'Space Mono',monospace;font-size:0.72rem;color:var(--text-hint);font-weight:400;margin-right:6px;}
+.quiz-gloss{font-size:0.8rem;color:var(--text-hint);font-style:italic;margin-bottom:12px;}
+.quiz-options{display:grid;gap:7px;}
+.quiz-opt{display:flex;align-items:flex-start;gap:10px;background:#fff;border:2px solid var(--cream-dark);border-radius:9px;padding:9px 13px;font-size:0.88rem;cursor:pointer;text-align:left;font-family:inherit;color:var(--text);width:100%;transition:border-color 0.2s,background 0.2s;}
+.quiz-opt:hover{border-color:var(--sage-light);background:#fbfaf6;}
+.quiz-opt.selected{border-color:var(--navy);background:#f3f5fa;}
+.quiz-opt.is-correct{border-color:var(--sage);background:#eef6ea;}
+.quiz-opt.is-wrong{border-color:var(--terracotta);background:#fbeceb;}
+.quiz-opt .letter{font-family:'Space Mono',monospace;font-size:0.7rem;color:var(--text-hint);flex-shrink:0;margin-top:2px;}
+.quiz-explain{font-size:0.84rem;margin-top:10px;padding:10px 13px;border-radius:8px;background:#fff;border-left:3px solid var(--gold);display:none;}
+.quiz-explain.show{display:block;}
+.res-check{margin-top:12px;padding-top:12px;border-top:1px dashed var(--cream-dark);}
+.res-check .rc-label{font-family:'Space Mono',monospace;font-size:0.57rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--sage);margin-bottom:6px;}
+.res-check .rc-q{font-size:0.83rem;margin-bottom:4px;color:var(--text);}
+.res-check .rc-gloss{font-size:0.73rem;color:var(--text-hint);font-style:italic;margin-bottom:8px;}
+.res-check .quiz-opt{font-size:0.8rem;padding:7px 11px;}
+
+.task-input{width:100%;border:none;border-bottom:2px solid var(--cream-dark);background:transparent;font-family:inherit;font-size:0.92rem;color:var(--navy);padding:5px 6px;}
+.task-input:focus{outline:none;border-bottom-color:var(--gold);}
+.task-fb{font-family:'Space Mono',monospace;font-size:0.66rem;margin-top:6px;display:none;}
+.task-fb.show{display:block;}
+.task-fb.ok{color:var(--sage);}
+.task-fb.ng{color:var(--terracotta);}
+.task-row{display:flex;align-items:center;gap:10px;background:var(--cream);border-radius:9px;padding:11px 14px;margin-bottom:9px;flex-wrap:wrap;}
+.task-row .rnum{font-family:'Space Mono',monospace;font-size:0.7rem;color:var(--text-hint);min-width:20px;}
+.task-tag{font-family:'Space Mono',monospace;font-size:0.6rem;background:var(--cream-dark);color:var(--navy);padding:3px 9px;border-radius:4px;white-space:nowrap;}
+
+.nav{display:flex;gap:4px;flex-wrap:wrap;background:#fff;padding:6px;border-radius:14px;box-shadow:var(--tile-shadow);margin-bottom:24px;}
+.tab{flex:1 1 auto;min-width:110px;padding:12px 14px;background:transparent;border:none;border-radius:10px;font-family:'Source Sans 3',sans-serif;font-size:0.9rem;font-weight:600;color:var(--text-light);cursor:pointer;transition:all 0.18s ease;min-height:44px;}
+.tab:hover{background:var(--cream-dark);color:var(--navy);}
+.tab.active{background:var(--navy);color:#fff;box-shadow:0 2px 6px rgba(27,46,79,0.25);}
+
+.sec{display:none;animation:fadein 0.3s ease;}
+.sec.active{display:block;}
+@keyframes fadein{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:translateY(0);}}
+.sec-title{font-family:'Playfair Display',serif;font-size:1.65rem;font-weight:700;color:var(--navy);margin-bottom:6px;}
+.sec-sub{font-family:'Space Mono',monospace;font-size:0.78rem;letter-spacing:0.12em;color:var(--terracotta);text-transform:uppercase;margin-bottom:22px;}
+
+.week-hero{background:#fff;padding:26px 30px;border-radius:14px;margin-bottom:24px;box-shadow:var(--tile-shadow);border-left:5px solid var(--terracotta);}
+.week-hero h1{font-family:'Playfair Display',serif;font-size:1.55rem;color:var(--navy);margin-bottom:8px;}
+.week-hero p{font-size:0.97rem;color:var(--text-light);margin-bottom:14px;}
+.topic-chips{display:flex;flex-wrap:wrap;gap:7px;}
+.chip{display:inline-block;padding:5px 11px;background:var(--cream-dark);color:var(--navy);border-radius:14px;font-size:0.78rem;font-weight:600;font-family:'Space Mono',monospace;letter-spacing:0.02em;}
+
+.ch-intro{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-light) 100%);color:#fff;padding:24px 28px;border-radius:14px;margin-bottom:22px;box-shadow:var(--soft-shadow);position:relative;overflow:hidden;}
+.ch-intro::before{content:'';position:absolute;left:-30px;top:-30px;width:140px;height:140px;border-radius:50%;background:radial-gradient(circle,rgba(196,93,58,0.25),transparent 70%);}
+.ch-intro .label{position:relative;font-family:'Space Mono',monospace;font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:6px;}
+.ch-intro h2{position:relative;font-family:'Playfair Display',serif;font-size:1.5rem;margin-bottom:10px;color:#fff;}
+.ch-intro p{position:relative;font-size:0.95rem;line-height:1.6;color:rgba(255,255,255,0.95);}
+
+.card{background:#fff;padding:22px 26px;border-radius:14px;margin-bottom:18px;box-shadow:var(--tile-shadow);}
+.card-title{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:var(--navy);margin-bottom:14px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+.card-title .pill{font-family:'Space Mono',monospace;font-size:0.65rem;background:var(--gold);color:#fff;padding:3px 9px;border-radius:12px;letter-spacing:0.1em;}
+
+.obj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;}
+.obj{background:var(--cream);padding:14px 16px;border-radius:10px;border-left:3px solid var(--sage);display:flex;gap:11px;align-items:flex-start;}
+.obj-num{flex-shrink:0;width:24px;height:24px;border-radius:50%;background:var(--sage);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-size:0.72rem;font-weight:700;}
+.obj-text{font-size:0.93rem;color:var(--text);line-height:1.45;}
+
+.res-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;}
+.res-card{background:#fff;padding:16px 18px;border-radius:12px;border-top:3px solid var(--gold);box-shadow:var(--tile-shadow);}
+.res-card-day{font-family:'Space Mono',monospace;font-size:0.7rem;color:var(--terracotta);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
+.res-card-topic{font-family:'Playfair Display',serif;font-weight:700;color:var(--navy);font-size:1.02rem;margin-bottom:10px;}
+.res-card a{display:block;font-size:0.84rem;color:var(--navy-light);text-decoration:none;padding:6px 0;border-bottom:1px solid var(--cream-dark);word-break:break-word;}
+.res-card a:last-child{border-bottom:none;}
+.res-card a:hover{color:var(--terracotta);}
+.res-card a::before{content:'→ ';color:var(--gold);font-weight:700;}
+
+.vocab-hint{text-align:center;font-size:0.82rem;color:var(--text-hint);font-style:italic;margin-bottom:14px;}
+.vocab-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:11px;}
+.vocab-card{perspective:1000px;height:118px;cursor:pointer;}
+.vocab-card-inner{position:relative;width:100%;height:100%;transition:transform 0.6s;transform-style:preserve-3d;}
+.vocab-card.flipped .vocab-card-inner{transform:rotateY(180deg);}
+.vocab-front,.vocab-back{position:absolute;width:100%;height:100%;-webkit-backface-visibility:hidden;backface-visibility:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:14px;border-radius:11px;text-align:center;box-shadow:var(--tile-shadow);}
+.vocab-front{background:#fff;border:2px solid var(--cream-dark);font-family:'Playfair Display',serif;font-weight:700;color:var(--navy);font-size:0.98rem;}
+.vocab-front small{display:block;font-family:'Space Mono',monospace;font-size:0.62rem;color:var(--text-hint);font-weight:400;margin-top:5px;letter-spacing:0.04em;}
+.vocab-back{background:linear-gradient(135deg,var(--terracotta),var(--terracotta-light));color:#fff;transform:rotateY(180deg);font-size:0.92rem;font-weight:600;}
+.vocab-ex{display:block;font-size:0.74rem;font-weight:400;font-style:italic;margin-top:6px;opacity:0.92;padding:0 18px;}
+.vocab-sound{position:absolute;top:6px;right:9px;font-size:0.75rem;opacity:0.55;}
+.vocab-replay{position:absolute;bottom:6px;right:8px;background:rgba(255,255,255,0.22);border:none;border-radius:50%;width:30px;height:30px;font-size:0.85rem;cursor:pointer;color:#fff;line-height:30px;padding:0;}
+.vocab-replay:hover,.vocab-replay:focus-visible{background:rgba(255,255,255,0.4);outline:2px solid #fff;}
+.vocab-card:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:12px;}
+.vocab-card.conn-card .vocab-front{border-color:var(--sage-light);color:var(--sage);}
+.vocab-card.conn-card .vocab-back{background:linear-gradient(135deg,var(--sage),#5A7350);}
+
+.gbox{background:#fff;padding:24px 28px;border-radius:14px;margin-bottom:22px;box-shadow:var(--tile-shadow);border-top:4px solid var(--terracotta);}
+.gbox.alt{border-top-color:var(--sage);}
+.gbox.alt2{border-top-color:var(--gold);}
+.gbox h3{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--navy);margin-bottom:6px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+.gbox h3 .num{font-family:'Space Mono',monospace;font-size:0.7rem;background:var(--terracotta);color:#fff;padding:4px 10px;border-radius:11px;letter-spacing:0.1em;}
+.gbox.alt h3 .num{background:var(--sage);}
+.gbox.alt2 h3 .num{background:var(--gold);color:var(--navy);}
+.gbox .sub{font-size:0.9rem;color:var(--text-hint);margin-bottom:16px;font-style:italic;}
+
+.conj-table{width:100%;border-collapse:collapse;margin:14px 0;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 4px rgba(27,46,79,0.05);}
+.conj-table th,.conj-table td{padding:9px 13px;text-align:left;font-size:0.9rem;border-bottom:1px solid var(--cream-dark);}
+.conj-table th{background:var(--navy);color:#fff;font-family:'Space Mono',monospace;font-size:0.7rem;letter-spacing:0.06em;text-transform:uppercase;font-weight:700;}
+.conj-table td .pn{color:var(--text-hint);}
+.conj-table td .fm{color:var(--terracotta);font-weight:700;font-style:italic;}
+.conj-table .accent{color:var(--terracotta);font-weight:700;}
+.conj-table tr:last-child td{border-bottom:none;}
+
+.three-col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:14px 0;}
+@media(max-width:740px){.three-col{grid-template-columns:1fr;}}
+.col-card{background:var(--cream);padding:16px 18px;border-radius:10px;border-top:4px solid var(--terracotta);}
+.col-card.gd{border-top-color:var(--gold);}
+.col-card.sg{border-top-color:var(--sage);}
+.col-card h4{font-family:'Playfair Display',serif;font-size:1.12rem;color:var(--navy);margin-bottom:4px;}
+.col-card .meaning{font-family:'Space Mono',monospace;font-size:0.68rem;color:var(--text-hint);letter-spacing:0.05em;text-transform:uppercase;margin-bottom:10px;}
+.col-card .ex{font-style:italic;font-size:0.85rem;color:var(--text);background:#fff;padding:7px 10px;border-radius:6px;margin-bottom:5px;}
+.col-card .ex strong{color:var(--terracotta);font-style:normal;}
+.col-card.gd .ex strong{color:#A07A2D;}
+.col-card.sg .ex strong{color:var(--sage);}
+
+.ex-box{background:var(--cream);border-left:3px solid var(--sage);padding:12px 16px;border-radius:8px;margin:14px 0;}
+.ex-box p{font-size:0.9rem;color:var(--text);margin:4px 0;}
+.ex-box em{color:var(--text-hint);font-style:italic;}
+.ojo{background:#FFF6F0;border-left:4px solid var(--terracotta);padding:14px 18px;border-radius:8px;margin:16px 0;}
+.ojo-title{font-family:'Space Mono',monospace;font-size:0.72rem;color:var(--terracotta);letter-spacing:0.12em;text-transform:uppercase;font-weight:700;margin-bottom:6px;}
+.ojo p{font-size:0.92rem;color:var(--text);line-height:1.55;}
+.ojo em{color:var(--terracotta);font-style:italic;font-weight:600;}
+
+.ex-item{display:flex;align-items:baseline;gap:10px;padding:11px 0;border-bottom:1px solid var(--cream-dark);font-size:0.97rem;}
+.ex-item:last-of-type{border-bottom:none;}
+.ex-num{flex-shrink:0;width:28px;height:28px;border-radius:50%;background:var(--cream);color:var(--navy);display:inline-flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-size:0.78rem;font-weight:700;}
+.ex-text{flex:1;line-height:1.9;color:var(--text);}
+.ex-hint{font-family:'Space Mono',monospace;font-size:0.78rem;color:var(--terracotta);margin-left:4px;}
+.blk{display:inline-block;width:120px;padding:6px 10px;border:2px solid var(--cream-dark);border-radius:6px;font-family:'Source Sans 3',sans-serif;font-size:0.95rem;color:var(--navy);background:#fff;outline:none;transition:border-color 0.15s;}
+.blk.wide{width:170px;}
+.blk:focus{border-color:var(--gold);}
+.blk.ok{border-color:var(--sage);background:#F4F8F0;color:#3F5C32;}
+.blk.ng{border-color:var(--terracotta);background:#FFF0EA;color:#8E3A1F;}
+
+.chk-btn,.rst-btn,.toggle-btn{display:inline-flex;align-items:center;gap:6px;padding:10px 18px;border:none;border-radius:8px;font-family:'Source Sans 3',sans-serif;font-size:0.92rem;font-weight:700;cursor:pointer;transition:all 0.15s;min-height:42px;margin-top:14px;}
+.chk-btn{background:var(--navy);color:#fff;}
+.chk-btn:hover{background:var(--navy-light);}
+.rst-btn{background:#fff;color:var(--navy);border:2px solid var(--cream-dark);margin-left:6px;}
+.rst-btn:hover{border-color:var(--navy);}
+.toggle-btn{background:var(--gold);color:var(--navy);margin-left:6px;}
+.toggle-btn:hover{background:var(--gold-light);}
+.res-msg{margin-top:12px;font-size:0.93rem;font-weight:700;min-height:22px;}
+.res-msg.ok{color:#3F5C32;}
+.res-msg.ng{color:#8E3A1F;}
+
+.word-bank{background:var(--cream);padding:11px 14px;border-radius:8px;margin-bottom:14px;font-size:0.88rem;}
+.word-bank-label{font-family:'Space Mono',monospace;font-size:0.7rem;color:var(--text-hint);letter-spacing:0.1em;text-transform:uppercase;display:block;margin-bottom:4px;}
+.word-bank-words span{display:inline-block;background:#fff;padding:3px 9px;border-radius:11px;margin:2px 3px;font-size:0.84rem;border:1px solid var(--cream-dark);color:var(--navy);font-weight:700;}
+
+/* Matching */
+.match-cols{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+.match-col-label{font-family:'Space Mono',monospace;font-size:0.62rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-hint);margin-bottom:6px;}
+.mi{padding:11px 13px;border:2px solid var(--cream-dark);border-radius:9px;cursor:pointer;font-size:0.86rem;background:#fff;transition:all 0.12s;line-height:1.4;margin-bottom:7px;color:var(--text);}
+.mi:hover{border-color:var(--sage-light);}
+.mi.sel{border-color:var(--navy);background:#f3f5fa;color:var(--navy);}
+.mi.done{border-color:var(--sage);background:#eef6ea;color:#3F5C32;pointer-events:none;opacity:0.75;}
+.mi.bad{border-color:var(--terracotta);background:#fbeceb;}
+
+/* Conjugation game */
+.game-wrap{background:var(--cream);border-radius:14px;padding:22px;text-align:center;}
+.game-scorebar{display:flex;justify-content:center;gap:22px;margin-bottom:16px;font-family:'Space Mono',monospace;font-size:0.72rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--text-hint);}
+.game-scorebar b{display:block;font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--terracotta);margin-top:2px;}
+.game-prompt{font-family:'Playfair Display',serif;font-size:1.6rem;color:var(--navy);margin:10px 0 4px;}
+.game-sub{font-size:0.85rem;color:var(--text-hint);font-style:italic;margin-bottom:18px;}
+.game-opts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:560px;margin:0 auto;}
+@media(max-width:520px){.game-opts{grid-template-columns:1fr;}}
+.game-opt{background:#fff;border:2px solid var(--cream-dark);border-radius:10px;padding:14px 10px;font-family:'Source Sans 3',sans-serif;font-size:1rem;font-weight:700;color:var(--navy);cursor:pointer;transition:all 0.12s;}
+.game-opt:hover{border-color:var(--sage-light);transform:translateY(-2px);}
+.game-opt.is-correct{border-color:var(--sage);background:#eef6ea;color:#3F5C32;}
+.game-opt.is-wrong{border-color:var(--terracotta);background:#fbeceb;color:#8E3A1F;}
+.game-feedback{min-height:22px;margin-top:14px;font-weight:700;font-size:0.95rem;}
+.game-feedback.ok{color:#3F5C32;}
+.game-feedback.ng{color:#8E3A1F;}
+.game-done{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--navy);}
+
+.cult-card{background:linear-gradient(135deg,var(--sage) 0%,#5A7350 100%);color:#fff;padding:24px 28px;border-radius:14px;margin-bottom:18px;box-shadow:var(--soft-shadow);}
+.cult-card .label{font-family:'Space Mono',monospace;font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:6px;}
+.cult-card h3{font-family:'Playfair Display',serif;font-size:1.4rem;margin-bottom:12px;color:#fff;}
+.cult-card p{font-size:0.95rem;line-height:1.65;color:rgba(255,255,255,0.95);}
+.cult-card .fact-pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;}
+.cult-card .fact-pills span{background:rgba(255,255,255,0.18);padding:5px 11px;border-radius:14px;font-size:0.82rem;font-weight:600;}
+
+.footer{margin-top:36px;padding:20px;text-align:center;font-family:'Space Mono',monospace;font-size:0.76rem;color:var(--text-hint);letter-spacing:0.05em;}
+
+@media(max-width:600px){
+  .chap-head{padding:24px 22px;}
+  .header-title{font-size:1.7rem;}
+  .gbox,.card,.cult-card,.ch-intro{padding:18px 20px;}
+  .three-col{grid-template-columns:1fr;}
+  .ex-item{flex-wrap:wrap;}
+}
+
+/* ── Semana 2 additions ── */
+.plan-card{background:#fff;padding:16px 18px;border-radius:12px;border-top:3px solid var(--gold);box-shadow:var(--tile-shadow);}
+.plan-card.inclass{border-top-color:var(--terracotta);}
+.plan-card.practice{border-top-color:var(--sage);}
+.plan-card ul{list-style:none;margin:0;padding:0;}
+.plan-card li{font-size:0.86rem;color:var(--text);padding:6px 0;border-bottom:1px solid var(--cream-dark);}
+.plan-card li:last-child{border-bottom:none;}
+.plan-card li::before{content:'→ ';color:var(--gold);font-weight:700;}
+
+.icon-speaker{width:14px;height:14px;display:inline-block;vertical-align:middle;}
+.vocab-sound{display:flex;align-items:center;}
+.vocab-replay{display:flex;align-items:center;justify-content:center;}
+.vocab-replay svg{width:14px;height:14px;}
+.vocab-card.sport-card .vocab-front{border-color:var(--gold-light);color:#8A6420;}
+.vocab-card.sport-card .vocab-back{background:linear-gradient(135deg,var(--gold),#B8862F);}
+.vocab-card.time-card .vocab-front{border-color:#b9c4d8;color:var(--navy-light);}
+.vocab-card.time-card .vocab-back{background:linear-gradient(135deg,var(--navy-light),var(--navy));}
+.audio-note{text-align:center;font-size:0.75rem;color:var(--text-hint);margin:-6px 0 16px;}
+
+/* The boot */
+.boot-wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;align-items:center;margin:14px 0;}
+@media(max-width:740px){.boot-wrap{grid-template-columns:1fr;}}
+.boot{display:grid;grid-template-columns:1fr 1fr;gap:6px;max-width:360px;}
+.boot div{padding:12px 10px;border-radius:8px;text-align:center;font-size:0.95rem;}
+.boot .in{background:var(--terracotta);color:#fff;font-weight:700;}
+.boot .out{background:#fff;border:2px dashed var(--cream-dark);color:var(--text-light);}
+.boot small{display:block;font-family:'Space Mono',monospace;font-size:0.6rem;letter-spacing:0.04em;opacity:0.85;font-weight:400;margin-bottom:2px;}
+.boot-legend{font-size:0.9rem;color:var(--text-light);line-height:1.6;}
+.boot-legend p{margin-bottom:8px;}
+.swatch{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:middle;margin-right:6px;}
+
+.chg{color:var(--terracotta);font-weight:700;}
+.conj-table td.nochg{color:var(--text);font-weight:400;font-style:normal;background:#FBFAF6;}
+
+.rule-list{counter-reset:rule;display:grid;gap:10px;margin:14px 0;}
+.rule{background:var(--cream);border-radius:10px;padding:13px 16px 13px 52px;position:relative;}
+.rule::before{counter-increment:rule;content:counter(rule);position:absolute;left:14px;top:13px;width:26px;height:26px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-size:0.75rem;font-weight:700;}
+.rule h4{font-family:'Playfair Display',serif;font-size:1.02rem;color:var(--navy);margin-bottom:4px;}
+.rule p{font-size:0.9rem;color:var(--text);margin:2px 0;}
+.rule .ok{color:#3F5C32;font-weight:700;}
+.rule .no{color:#8E3A1F;text-decoration:line-through;}
+
+/* Tarea: Mi rutina deportiva */
+.task-area{width:100%;min-height:210px;border:2px solid var(--cream-dark);border-radius:10px;padding:14px 16px;font-family:inherit;font-size:0.97rem;line-height:1.6;color:var(--navy);background:#fff;resize:vertical;}
+.task-area:focus{outline:none;border-color:var(--gold);}
+.wc{font-family:'Space Mono',monospace;font-size:0.7rem;color:var(--text-hint);margin-top:6px;text-align:right;}
+.checklist{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:8px;margin:14px 0 4px;padding:0;}
+.checklist li{background:var(--cream);border-radius:9px;padding:10px 12px 10px 38px;font-size:0.86rem;position:relative;color:var(--text-light);border:2px solid transparent;}
+.checklist li::before{content:'';position:absolute;left:12px;top:11px;width:16px;height:16px;border-radius:4px;border:2px solid #cdbf9f;background:#fff;}
+.checklist li.met{border-color:var(--sage);background:#eef6ea;color:#3F5C32;}
+.checklist li.met::before{background:var(--sage);border-color:var(--sage);}
+.checklist li.met::after{content:'';position:absolute;left:17px;top:13px;width:5px;height:9px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg);}
+.checklist li b{color:var(--navy);}
+.model{background:#fff;border:1px dashed var(--gold);border-radius:10px;padding:14px 18px;margin:14px 0;font-size:0.92rem;line-height:1.7;}
+.model .ml{font-family:'Space Mono',monospace;font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:#A07A2D;margin-bottom:6px;display:block;}
+.model mark{background:rgba(212,162,76,0.25);padding:0 2px;border-radius:3px;color:inherit;}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:12px 0;}
+.step{background:var(--cream);border-radius:10px;padding:12px 14px;font-size:0.88rem;}
+.step b{display:block;font-family:'Space Mono',monospace;font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--terracotta);margin-bottom:4px;}
+
+
+/* ── Semana 3 additions ── */
+.vocab-card.nat-card .vocab-front{border-color:var(--sage-light);color:#4d6a40;}
+.vocab-card.nat-card .vocab-back{background:linear-gradient(135deg,#4d6a40,var(--sage));}
+.formula{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:14px 0;}
+.formula span{background:var(--cream);border-radius:9px;padding:9px 13px;font-size:0.92rem;font-weight:700;color:var(--navy);}
+.formula span small{display:block;font-family:'Space Mono',monospace;font-size:0.58rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--text-hint);font-weight:400;}
+.formula .hl{background:var(--terracotta);color:#fff;}
+.formula .hl small{color:rgba(255,255,255,0.8);}
+.formula i{font-style:normal;color:var(--text-hint);font-weight:700;}
+.season-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0;}
+@media(max-width:740px){.season-grid{grid-template-columns:1fr 1fr;}}
+.season{background:var(--cream);border-radius:10px;padding:13px 14px;border-top:4px solid var(--sage);}
+.season.s2{border-top-color:var(--gold);} .season.s3{border-top-color:var(--terracotta);} .season.s4{border-top-color:var(--navy-light);}
+.season h4{font-family:'Playfair Display',serif;font-size:1.02rem;color:var(--navy);margin-bottom:6px;}
+.season p{font-size:0.82rem;color:var(--text);margin:3px 0;}
+.season p b{font-family:'Space Mono',monospace;font-size:0.6rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--text-hint);display:block;}
+.reading{background:var(--cream);border-radius:10px;padding:16px 20px;font-size:0.98rem;line-height:1.8;margin-bottom:14px;}
+.reading p{margin-bottom:10px;}
+.reading .gl{font-size:0.8rem;color:var(--text-hint);font-style:italic;}
+.rec-label{display:block;font-family:'Space Mono',monospace;font-size:0.66rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-light);margin:14px 0 6px;}
+.rec-input{width:100%;border:2px solid var(--cream-dark);border-radius:10px;padding:11px 14px;font-family:inherit;font-size:0.97rem;color:var(--navy);background:#fff;}
+.rec-input:focus{outline:none;border-color:var(--gold);}
+.task-area.short{min-height:110px;}
+.rec-card{background:#fff;border:1px dashed var(--gold);border-radius:10px;padding:16px 20px;margin:14px 0;font-size:0.92rem;line-height:1.7;}
+.rec-card h4{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--navy);margin-bottom:6px;}
+.rec-card ol{margin:6px 0 6px 20px;} .rec-card li{margin-bottom:3px;}
+.rec-card mark{background:rgba(212,162,76,0.25);padding:0 2px;border-radius:3px;color:inherit;}
+.rec-card .ml{font-family:'Space Mono',monospace;font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:#A07A2D;margin-bottom:6px;display:block;}
+
+/* ── Semana 4 additions ── */
+.coin-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:14px 0 6px;}
+.coin{background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.25);border-radius:10px;padding:10px 12px;}
+.coin b{display:block;font-family:'Playfair Display',serif;font-size:1rem;}
+.coin span{font-family:'Space Mono',monospace;font-size:0.62rem;letter-spacing:0.06em;text-transform:uppercase;opacity:0.85;}
+.timeline{display:flex;gap:0;margin:16px 0 10px;overflow-x:auto;padding-bottom:4px;}
+.timeline div{flex:1;min-width:92px;text-align:center;padding:30px 6px 8px;position:relative;font-size:0.84rem;color:var(--navy);font-weight:700;}
+.timeline div::before{content:'';position:absolute;left:0;right:0;top:12px;height:3px;background:var(--cream-dark);}
+.timeline div::after{content:'';position:absolute;left:50%;top:6px;width:14px;height:14px;margin-left:-7px;border-radius:50%;background:var(--terracotta);border:2px solid #fff;box-shadow:0 0 0 2px var(--terracotta);}
+.timeline div.now::after{background:var(--sage);box-shadow:0 0 0 2px var(--sage);}
+.timeline small{display:block;font-weight:400;color:var(--text-hint);font-size:0.72rem;margin-top:2px;}
+.budget{width:100%;border-collapse:collapse;margin:12px 0 4px;font-size:0.88rem;}
+.budget td{padding:7px 10px;border-bottom:1px solid rgba(255,255,255,0.2);}
+.budget td:last-child{text-align:right;font-family:'Space Mono',monospace;font-size:0.8rem;}
+.vocab-card.trip-card .vocab-front{border-color:#e7b6a4;color:#a3492b;}
+.vocab-card.trip-card .vocab-back{background:linear-gradient(135deg,var(--terracotta),#9f4527);}
+
+/* Video Log 2 (from Video Log 1) */
+.vl-meter{margin-bottom:6px;}
+.vl-meter-top{display:flex;justify-content:space-between;font-family:'Space Mono',monospace;font-size:0.72rem;color:var(--text-light);margin-bottom:6px;}
+.vl-meter-top #vlTime{color:var(--terracotta);font-weight:700;}
+.vl-bar{position:relative;height:12px;background:var(--cream-dark);border-radius:6px;overflow:hidden;}
+.vl-zone{position:absolute;left:50%;width:25%;top:0;bottom:0;background:rgba(110,140,95,0.28);}
+.vl-fill{position:absolute;left:0;top:0;bottom:0;width:0;background:linear-gradient(90deg,var(--terracotta),var(--gold));border-radius:6px;transition:width 0.3s;opacity:0.9;}
+.vl-scale{display:flex;justify-content:space-between;font-family:'Space Mono',monospace;font-size:0.6rem;color:var(--text-hint);margin-top:4px;}
+.vl-note{font-size:0.78rem;color:var(--text-hint);font-style:italic;margin-top:10px;}
+.vl-part{border:2px solid var(--cream-dark);border-radius:12px;padding:16px 18px;margin-top:14px;background:#fff;transition:border-color 0.2s;}
+.vl-part.met{border-color:var(--sage);}
+.vl-part-head{display:flex;gap:12px;align-items:flex-start;}
+.vl-num{flex-shrink:0;width:32px;height:32px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-weight:700;font-size:0.85rem;}
+.vl-part.met .vl-num{background:var(--sage);}
+.vl-part h4{font-family:'Playfair Display',serif;font-size:1.08rem;color:var(--navy);margin-bottom:3px;}
+.vl-part .vl-desc{font-size:0.88rem;color:var(--text-light);line-height:1.5;}
+.vl-tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 10px;}
+.vl-tag{font-family:'Space Mono',monospace;font-size:0.62rem;letter-spacing:0.04em;padding:3px 9px;border-radius:10px;background:var(--cream-dark);color:var(--navy);}
+.vl-starters{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px;}
+.vl-starter{background:var(--cream);border:1px dashed var(--gold);color:#7A5A1E;border-radius:14px;padding:4px 11px;font-size:0.8rem;cursor:pointer;font-family:inherit;}
+.vl-starter:hover{background:#fff6e3;}
+.vl-part textarea{width:100%;min-height:92px;border:2px solid var(--cream-dark);border-radius:9px;padding:10px 12px;font-family:inherit;font-size:0.95rem;line-height:1.55;color:var(--navy);resize:vertical;}
+.vl-part textarea:focus{outline:none;border-color:var(--gold);}
+.vl-part-fb{font-family:'Space Mono',monospace;font-size:0.68rem;margin-top:6px;color:var(--text-hint);}
+.vl-part-fb .ok{color:var(--sage);font-weight:700;}
+.vl-part-fb .ng{color:var(--terracotta);font-weight:700;}
+.vl-script{background:var(--cream);border-radius:10px;padding:16px 18px;font-size:0.95rem;line-height:1.75;max-height:320px;overflow:auto;}
+.vl-script p{margin-bottom:8px;}
+.vl-script b{font-family:'Space Mono',monospace;font-size:0.62rem;color:var(--terracotta);letter-spacing:0.06em;margin-right:6px;}
+.vl-errs{font-size:0.86rem;color:#8E3A1F;margin-top:8px;}
+.vl-actions{display:flex;flex-wrap:wrap;gap:6px;align-items:center;}
+.vl-actions .rst-btn,.vl-actions .toggle-btn{margin-left:0;}
+.vl-open{cursor:pointer;}
+.vl-manual{display:flex;gap:8px;align-items:center;font-size:0.86rem;}
+.vl-modal{position:fixed;inset:0;background:rgba(27,46,79,0.72);z-index:1000;display:flex;align-items:center;justify-content:center;padding:16px;}
+.vl-modal[hidden]{display:none;}
+.vl-modal-box{background:#fff;border-radius:16px;width:min(900px,100%);max-height:92vh;display:flex;flex-direction:column;overflow:hidden;box-shadow:var(--soft-shadow);}
+.vl-modal-head{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;padding:14px 20px;background:var(--navy);color:#fff;font-family:'Playfair Display',serif;font-size:1.1rem;}
+.vl-modal-head .chk-btn,.vl-modal-head .rst-btn{margin-top:0;}
+.vl-timer{font-family:'Space Mono',monospace;font-size:1.8rem;font-weight:700;color:var(--gold-light);}
+.vl-timer.in{color:#B8D8A8;}
+.vl-timer.over{color:#F4A58A;}
+.vl-zone-note{font-family:'Space Mono',monospace;font-size:0.7rem;color:var(--text-hint);padding:8px 20px;background:var(--cream);}
+.vl-prompter{padding:22px 26px;overflow:auto;font-size:1.45rem;line-height:1.7;color:var(--navy);}
+.vl-prompter p{margin-bottom:16px;}
+.vl-prompter b{display:block;font-family:'Space Mono',monospace;font-size:0.7rem;letter-spacing:0.1em;color:var(--terracotta);text-transform:uppercase;}
+@media(max-width:600px){.vl-prompter{font-size:1.15rem;padding:16px;}}
+.vl-due{display:inline-block;background:rgba(255,255,255,0.18);padding:5px 12px;border-radius:14px;font-size:0.85rem;font-weight:700;margin-top:10px;}
+.tool-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:12px;}
+.tool{background:var(--cream);border-radius:10px;padding:14px 16px;border-top:4px solid var(--terracotta);}
+.tool.t2{border-top-color:var(--gold);} .tool.t3{border-top-color:var(--sage);} .tool.t4{border-top-color:var(--navy-light);}
+.tool h4{font-family:'Playfair Display',serif;font-size:1.02rem;color:var(--navy);margin-bottom:6px;}
+.tool p{font-size:0.86rem;color:var(--text);margin:4px 0;line-height:1.5;}
+.tool table{width:100%;border-collapse:collapse;font-size:0.84rem;margin:6px 0;}
+.tool td{padding:3px 6px;border-bottom:1px solid var(--cream-dark);}
+.tool td:first-child{color:var(--text-hint);font-family:'Space Mono',monospace;font-size:0.68rem;}
+.tool .ok{color:#3F5C32;font-weight:700;}
+
+/* ── Semana 6 additions ── */
+.hunt{background:var(--cream);border-radius:10px;padding:16px 20px;font-size:1rem;line-height:2;margin-bottom:12px;}
+.hunt .w{cursor:pointer;border-radius:4px;padding:1px 0;transition:background 0.15s;}
+.hunt .w:hover{background:rgba(212,162,76,0.25);}
+.hunt .w.sel{background:var(--gold);color:#fff;}
+.hunt .w.hit{background:var(--sage);color:#fff;}
+.hunt .w.miss{background:var(--terracotta);color:#fff;}
+.hunt .w.lost{outline:2px dashed var(--sage);}
+.hunt-count{font-family:'Space Mono',monospace;font-size:0.72rem;color:var(--text-hint);margin-bottom:6px;}
+.builder{border:2px solid var(--cream-dark);border-radius:12px;padding:14px 16px;margin-bottom:12px;background:#fff;}
+.builder.ok{border-color:var(--sage);background:#f3f8f0;}
+.builder.ng{border-color:var(--terracotta);}
+.builder .bq{font-size:0.86rem;color:var(--text-light);margin-bottom:8px;}
+.builder .bq b{color:var(--navy);}
+.bline{min-height:44px;border-bottom:2px dashed var(--cream-dark);display:flex;flex-wrap:wrap;gap:6px;padding:6px 0;margin-bottom:10px;}
+.bpool{display:flex;flex-wrap:wrap;gap:6px;}
+.btile{background:var(--cream);border:2px solid var(--gold-light);border-radius:8px;padding:6px 11px;font-size:0.95rem;cursor:pointer;font-family:inherit;color:var(--navy);}
+.bline .btile{background:var(--navy);color:#fff;border-color:var(--navy);}
+.btile:hover{filter:brightness(0.97);}
+.bfb{font-size:0.84rem;margin-top:8px;}
+.bfb.ok{color:#3F5C32;font-weight:700;} .bfb.ng{color:#8E3A1F;}
+.city-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0 6px;}
+@media(max-width:740px){.city-grid{grid-template-columns:1fr;}}
+.city{background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.25);border-radius:10px;padding:12px 14px;}
+.city b{display:block;font-family:'Playfair Display',serif;font-size:1.05rem;}
+.city span{font-family:'Space Mono',monospace;font-size:0.6rem;letter-spacing:0.06em;text-transform:uppercase;opacity:0.85;}
+.city p{font-size:0.84rem;margin-top:6px;line-height:1.5;}
+.cult-card.sea{background:linear-gradient(135deg,var(--navy-light) 0%,var(--navy) 100%);}
+.blog-post{background:#fff;border-left:4px solid var(--terracotta);border-radius:8px;padding:12px 16px;margin-bottom:10px;}
+.blog-post .bh{font-family:'Space Mono',monospace;font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--terracotta);margin-bottom:4px;}
+.blog-post.p2{border-left-color:var(--gold);} .blog-post.p2 .bh{color:#A07A2D;}
+.blog-post.p3{border-left-color:var(--sage);} .blog-post.p3 .bh{color:#4d6a40;}
+.vocab-card.carn-card .vocab-front{border-color:#e7b6a4;color:#a3492b;}
+.vocab-card.carn-card .vocab-back{background:linear-gradient(135deg,#C45D3A,#D4A24C);}
+.vocab-card.sea-card .vocab-front{border-color:#b9c4d8;color:var(--navy-light);}
+.vocab-card.sea-card .vocab-back{background:linear-gradient(135deg,#2E4977,#1B2E4F);}
+.blk.wide{width:11.5em;max-width:100%;}
+
+@keyframes fadein{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:translateY(0);}}
+
+/* ── Semana 8 additions ── */
+.three-col.two{grid-template-columns:1fr 1fr;}
+@media(max-width:740px){.three-col.two{grid-template-columns:1fr;}}
+.col-card .ex b{color:var(--navy);}
+.le-pick{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px;}
+.le-btn{font-family:'Source Sans 3',sans-serif;font-weight:700;font-size:0.92rem;padding:9px 16px;border-radius:22px;border:2px solid var(--navy);background:#fff;color:var(--navy);cursor:pointer;transition:all .2s;}
+.le-btn:hover{background:var(--cream-dark);}
+.le-btn.active{background:var(--navy);color:#fff;}
+.le-h{font-family:'Playfair Display',serif;color:var(--navy);margin:18px 0 6px;}
+.le-p{font-size:0.9rem;color:var(--text-light);margin-bottom:8px;}
+.ra-jump{border-color:var(--sage)!important;color:var(--sage)!important;}
+
+.ra-wrap{background:#fff;border-radius:16px;box-shadow:var(--soft-shadow);padding:22px 24px;margin-bottom:20px;}
+.ra-row{display:flex;flex-wrap:wrap;align-items:flex-start;gap:10px 14px;margin-bottom:14px;}
+.ra-lbl{font-family:'Space Mono',monospace;font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-hint);min-width:92px;padding-top:9px;}
+.ra-chips{display:flex;flex-wrap:wrap;gap:8px;flex:1;}
+.ra-chip{font-family:'Source Sans 3',sans-serif;font-size:0.88rem;padding:7px 13px;border-radius:20px;border:1.5px solid var(--cream-dark);background:var(--cream);color:var(--navy);cursor:pointer;transition:all .15s;}
+.ra-chip span{font-size:0.72rem;color:var(--text-hint);margin-left:4px;}
+.ra-chip:hover{border-color:var(--gold);}
+.ra-chip.active{background:var(--navy);border-color:var(--navy);color:#fff;}
+.ra-chip.active span{color:var(--gold-light);}
+.ra-modes{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;flex:1;}
+@media(max-width:740px){.ra-modes{grid-template-columns:1fr;}}
+.ra-mode{text-align:left;padding:11px 14px;border-radius:12px;border:2px solid var(--cream-dark);background:var(--cream);cursor:pointer;font-family:'Source Sans 3',sans-serif;transition:all .15s;}
+.ra-mode b{display:block;color:var(--navy);font-size:0.98rem;margin-bottom:2px;}
+.ra-mode span{display:block;font-size:0.8rem;color:var(--text-light);line-height:1.35;}
+.ra-mode.active{border-color:var(--sage);background:rgba(110,140,95,0.12);}
+.ra-mode:disabled{opacity:0.45;cursor:not-allowed;}
+.ra-ctrls{align-items:center;}
+.ra-speed{display:inline-flex;border:2px solid var(--navy);border-radius:22px;overflow:hidden;}
+.ra-speed button{border:0;background:#fff;color:var(--navy);font-family:'Source Sans 3',sans-serif;font-weight:600;font-size:0.85rem;padding:7px 13px;cursor:pointer;}
+.ra-speed button+button{border-left:1px solid var(--cream-dark);}
+.ra-speed button.active{background:var(--navy);color:#fff;}
+.ra-tog{font-size:0.88rem;color:var(--text-light);display:inline-flex;align-items:center;gap:6px;cursor:pointer;}
+.ra-warn{background:#FCF0EE;border-left:4px solid var(--terracotta);padding:10px 14px;border-radius:8px;font-size:0.88rem;margin-bottom:12px;}
+.ra-stage{border:2px solid var(--cream-dark);border-radius:14px;padding:16px 18px;background:var(--cream);}
+.ra-stage-top{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-bottom:8px;}
+.ra-title{font-family:'Playfair Display',serif;font-weight:700;color:var(--navy);font-size:1.1rem;}
+.ra-turn{margin-left:auto;font-family:'Space Mono',monospace;font-size:0.72rem;letter-spacing:0.06em;text-transform:uppercase;padding:4px 12px;border-radius:20px;}
+.ra-turn.on{background:var(--gold);color:#fff;}
+.ra-prog{height:6px;background:var(--cream-dark);border-radius:3px;overflow:hidden;margin-bottom:12px;}
+.ra-prog-fill{height:100%;width:0;background:var(--sage);transition:width .3s;}
+.ra-text{background:#fff;border-radius:10px;padding:18px 22px;font-size:1.18rem;line-height:2.05;max-height:52vh;overflow-y:auto;scroll-behavior:smooth;}
+.ra-text.big{font-size:1.5rem;line-height:2.1;}
+.ra-text p{margin-bottom:14px;}
+.ra-text p:last-child{margin-bottom:0;}
+.ra-w{cursor:pointer;border-radius:5px;padding:1px 2px;transition:background .18s,color .18s;}
+.ra-w:hover{background:rgba(212,162,76,0.18);}
+.ra-w.read{color:#2F6B2A;background:rgba(110,140,95,0.16);}
+.ra-w.cur{background:var(--gold-light);color:var(--navy);box-shadow:0 0 0 2px var(--gold);}
+.ra-w.hear{background:rgba(46,73,119,0.16);color:var(--navy);box-shadow:0 0 0 2px var(--navy-light);}
+.ra-text.show-links .ra-w.lk::after{content:'‿';color:var(--terracotta);font-weight:700;margin-left:2px;margin-right:-8px;position:relative;top:0.35em;}
+.ra-btns{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:14px;}
+.pr-like{font-family:'Source Sans 3',sans-serif;font-weight:700;font-size:0.98rem;padding:10px 20px;border-radius:24px;border:0;cursor:pointer;transition:transform .1s,background .2s;}
+.pr-like:active{transform:scale(0.97);}
+.ra-go{background:var(--sage);color:#fff;min-width:140px;}
+.ra-go.on{background:var(--terracotta);}
+.ra-sec{background:#fff;color:var(--navy);border:2px solid var(--navy);}
+.ra-stat{font-family:'Space Mono',monospace;font-size:0.7rem;color:var(--text-hint);text-transform:uppercase;letter-spacing:0.05em;}
+.ra-stat b{display:inline-block;margin-left:4px;font-size:0.9rem;color:var(--navy);text-transform:none;}
+.ra-hint{font-size:0.8rem;color:var(--text-hint);font-style:italic;margin-top:10px;}
+.ra-done{margin-top:16px;padding:16px 20px;border-radius:12px;background:rgba(110,140,95,0.12);border-left:5px solid var(--sage);}
+.ra-done h3{font-family:'Playfair Display',serif;color:var(--navy);margin-bottom:4px;}
+.ra-q{font-weight:700;color:var(--navy);margin:10px 0 6px;}
+.ra-self{display:flex;flex-wrap:wrap;gap:8px;}
+.ra-self button{font-family:'Source Sans 3',sans-serif;font-size:0.88rem;padding:7px 14px;border-radius:20px;border:2px solid var(--sage);background:#fff;color:var(--sage);cursor:pointer;font-weight:600;}
+.ra-self button.active{background:var(--sage);color:#fff;}
+.ra-advice{margin-top:10px;font-size:0.92rem;color:var(--text-light);}
+.ra-keys{margin-top:16px;}
+.ra-keys .ra-lbl{padding-top:0;margin-bottom:8px;}
+@media(max-width:520px){.ra-wrap{padding:16px;}.ra-text{padding:14px;font-size:1.08rem;}.ra-lbl{min-width:0;width:100%;padding-top:0;}}
+
+/* ── Semana 9 additions ── */
+.rv-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;}
+.rv-card{background:var(--cream);border-radius:10px;padding:12px 14px;border-left:4px solid var(--gold);}
+.rv-card b{display:block;font-family:'Playfair Display',serif;color:var(--navy);margin-bottom:4px;}
+.rv-card span{font-size:0.88rem;color:var(--text-light);line-height:1.45;}
+.rv-score{margin-top:14px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;}
+.rv-score-title{width:100%;font-family:'Space Mono',monospace;font-size:0.7rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-hint);}
+.rv-pill{font-family:'Space Mono',monospace;font-size:0.72rem;padding:5px 12px;border-radius:16px;background:var(--cream-dark);color:var(--text-light);}
+.rv-pill.good{background:rgba(110,140,95,0.2);color:#2F6B2A;}
+.rv-pill.mid{background:rgba(212,162,76,0.25);color:#8A5F12;}
+.rv-pill.low{background:rgba(196,93,58,0.18);color:#A8452A;}
+</style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<div class="app">
+
+  <div class="chap-head">
+    <span class="header-badge">SPSCC · ESP 122 · Semana 9</span>
+    <span class="header-title">Capítulo 8.1 · Relaciones y repaso</span>
+    <span class="header-subtitle">Irregular Preterite · Feelings &amp; Telling a Story · Review for the Final</span>
+  </div>
+
+  <div class="completion-wrap">
+    <div class="completion-top">
+      <span class="completion-label">Mi progreso · My progress</span>
+      <span class="completion-score" id="completionScore">★ 0% correcto</span>
+      <span class="completion-pct" id="completionPct">0%</span>
+    </div>
+    <div class="prog-bar"><div class="prog-fill" id="pf" style="width:0%"></div></div>
+    <div class="completion-legend" id="completionLegend"></div>
+  </div>
+
+  <div class="submit-bar">
+    <label for="studentName">Nombre / Name</label>
+    <input id="studentName" type="text" placeholder="Type your full name here" autocomplete="name">
+    <button class="btn-download" onclick="downloadReport()">↓ Download Report</button>
+    <span class="submit-hint">Enter your name, work through every tab, then download your report and submit it on Canvas.</span>
+  </div>
+
+  <nav class="nav" aria-label="Week 9 sections">
+    <button class="tab active" onclick="switchTab('ov',this)">Inicio</button>
+    <button class="tab" onclick="switchTab('vo',this)">Vocabulario</button>
+    <button class="tab" onclick="switchTab('gr',this)">Gramática</button>
+    <button class="tab" onclick="switchTab('ej',this)">Ejercicios</button>
+    <button class="tab" onclick="switchTab('le',this)">Leyendas</button>
+    <button class="tab" onclick="switchTab('ra',this)">Lee en voz alta</button>
+    <button class="tab" onclick="switchTab('rv',this)">Repaso final</button>
+    <button class="tab" onclick="switchTab('ju',this)">Juegos</button>
+  </nav>
+
+  <div id="main-content"></div>
+
+  <!-- ═══ INICIO ═══ -->
+  <section class="sec active" id="sec-ov">
+    <h2 class="sec-title">Semana 9 · Capítulo 8.1 · Relaciones y repaso</h2>
+    <p class="sec-sub">estuve · tuve · pude · supe · quise · vine · dije · traje · ser vs. estar · feelings · telling a story · review for the final</p>
+
+    <div class="ch-intro">
+      <div class="label">Capítulo 8.1 · Welcome to Week 9</div>
+      <h2>Tell a story with feelings, from beginning to end</h2>
+      <p>This week you learn the <strong>irregular preterite</strong> of eight very common verbs (<em>estuve, tuve, pude, supe, quise, vine, dije, traje</em>), the adjectives that <strong>change meaning with ser and estar</strong> (<em>es aburrido</em> vs. <em>está aburrido</em>), and how to talk about <strong>feelings</strong> and <strong>relationships</strong>. You will put everything together to <strong>tell a full story</strong>: the scene, the problem and the ending. You will read three legends from Mexico and Central America: <strong>La Llorona, El Cadejo and La Siguanaba</strong>. The <em>Repaso final</em> tab reviews Semanas 1 to 9 to get you ready for finals week.</p>
+    </div>
+
+    <div class="week-hero">
+      <h1>What this week covers</h1>
+      <p>Everything here is graded automatically, except <em>Lee en voz alta</em>, which is free practice and does not count toward your progress.</p>
+      <div class="topic-chips">
+        <span class="chip">estuve · tuve · pude · supe</span>
+        <span class="chip">quise · vine</span>
+        <span class="chip">dije · traje</span>
+        <span class="chip">ser / estar + aburrido, listo, malo, rico</span>
+        <span class="chip">estaba nervioso / tuve miedo</span>
+        <span class="chip">primero · de repente · al final</span>
+        <span class="chip">prestar · pedir · deber · dejar</span>
+        <span class="chip">leyendas</span>
+        <span class="chip">repaso final</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Objetivos · By the end of this week you can… <span class="pill">CAP 8.1</span></div>
+      <div class="obj-grid">
+        <div class="obj"><span class="obj-num">1</span><span class="obj-text">Conjugate the irregular preterite of <strong>u-stem</strong>, <strong>i-stem</strong> and <strong>j-stem</strong> verbs.</span></div>
+        <div class="obj"><span class="obj-num">2</span><span class="obj-text">Choose <strong>ser</strong> or <strong>estar</strong> with adjectives that change meaning.</span></div>
+        <div class="obj"><span class="obj-num">3</span><span class="obj-text">Describe <strong>feelings</strong> in the past: an ongoing state or a sudden change.</span></div>
+        <div class="obj"><span class="obj-num">4</span><span class="obj-text">Talk about <strong>relationships</strong> with prestar, pedir, deber and dejar.</span></div>
+        <div class="obj"><span class="obj-num">5</span><span class="obj-text">Tell a complete <strong>story</strong> with narrative markers: exposition, complication, resolution.</span></div>
+        <div class="obj"><span class="obj-num">6</span><span class="obj-text">Review the grammar of <strong>Semanas 1 to 9</strong> to prepare for the final exam.</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Plan de la semana <span class="pill">SEMANA 9</span></div>
+      <div class="res-grid">
+        <div class="plan-card">
+          <div class="res-card-day">Lunes · self-guided</div>
+          <div class="res-card-topic">Vocabulario + G1</div>
+          <ul><li>Flip every flashcard</li><li>Read G1 · irregular preterite</li><li>Ejercicios 1 and 2</li></ul>
+        </div>
+        <div class="plan-card inclass">
+          <div class="res-card-day">Martes · en clase</div>
+          <div class="res-card-topic">Sentimientos y relaciones</div>
+          <ul><li>G2 and G3 · ser vs. estar, emotions</li><li>Ejercicios 3, 4 and 7</li></ul>
+        </div>
+        <div class="plan-card practice">
+          <div class="res-card-day">Miércoles · práctica</div>
+          <div class="res-card-topic">Leyendas</div>
+          <ul><li>G4 · telling a story</li><li>Read the three legends</li><li>Lee en voz alta</li></ul>
+        </div>
+        <div class="plan-card inclass">
+          <div class="res-card-day">Jueves · en clase</div>
+          <div class="res-card-topic">Cuéntame una leyenda + repaso</div>
+          <ul><li>Ejercicios 5, 6 and 8</li><li>Repaso final · Semanas 1 to 9</li><li>Juegos</li></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="cult-card">
+      <div class="label">Historia de la música · Nota histórica</div>
+      <h3>El bolero y la canción romántica</h3>
+      <p>The bolero was born in <strong>Santiago de Cuba</strong> in the late 1800s; <em>Tristezas</em> (1883), by José "Pepe" Sánchez, is often called the first bolero. In <strong>Mexico</strong> it became the great romantic song of the 20th century, with composers like Agustín Lara, the guitar trio <strong>Los Panchos</strong> (formed in New York in 1944) and, later, Armando Manzanero. Luis Miguel's album <em>Romance</em> (1991) brought it to a new generation, and in 2023 UNESCO named the bolero of Cuba and Mexico Intangible Cultural Heritage of Humanity. Its themes are this week's vocabulary: love, jealousy, nostalgia and disappointment.</p>
+      <div class="fact-pills"><span>el amor</span><span>los celos</span><span>la nostalgia</span><span>la decepción</span></div>
+    </div>
+    <div class="cult-card">
+      <div class="label">Nota cultural · México y el Surrealismo</div>
+      <h3>Frida Kahlo, Remedios Varo y Leonora Carrington</h3>
+      <p>When the French poet André Breton visited in 1938, he called Mexico "the surrealist country par excellence." He saw Frida Kahlo's self-portraits as surrealist, but Kahlo disagreed: she said she never painted dreams, only her own reality. During World War II, two European painters found a new home in Mexico City: <strong>Remedios Varo</strong>, from Spain, and <strong>Leonora Carrington</strong>, from England. They became close friends and painted magical worlds full of strange creatures, dreams and stories, a good match for this week's legends.</p>
+      <div class="fact-pills"><span>el sueño</span><span>el autorretrato</span><span>la pintora</span><span>la realidad</span></div>
+    </div>
+    <div class="cult-card">
+      <div class="label">Historias, cuentos y leyendas</div>
+      <h3>La Llorona, El Cadejo y La Siguanaba</h3>
+      <p>Legends are stories passed down from grandparents to grandchildren, usually at night. <strong>La Llorona</strong>, the crying woman who looks for her children by the river, is known from Mexico to Central America. <strong>El Cadejo</strong>, a mysterious dog that follows people walking at night, and <strong>La Siguanaba</strong>, a spirit that appears by the river, are especially popular in El Salvador and Guatemala. Legends are perfect for practicing the preterite and the imperfect: <em>Era una noche oscura… De repente, escuchó un grito.</em></p>
+      <div class="fact-pills"><span>la leyenda</span><span>cuentan que…</span><span>el espíritu</span><span>asustado/a</span></div>
+    </div>
+  </section>
+
+  <!-- ═══ VOCABULARIO ═══ -->
+  <section class="sec" id="sec-vo">
+    <h2 class="sec-title">Vocabulario · Relaciones y sentimientos</h2>
+    <p class="sec-sub">feelings · relationships · ser vs. estar · telling a story · irregular preterite</p>
+    <p class="vocab-hint">Tap any card to flip it: you'll see the translation and an example, and hear both.</p>
+    <p class="audio-note">Audio uses your browser's Spanish voice. If you hear nothing, check your volume or try Chrome or Edge.</p>
+    <div class="card"><div class="card-title">Los sentimientos · Feelings <span class="pill">12 WORDS</span></div><div class="vocab-grid" id="fcFeel"></div></div>
+    <div class="card"><div class="card-title">Las relaciones · Relationships <span class="pill">10 WORDS</span></div><div class="vocab-grid" id="fcRel"></div></div>
+    <div class="card"><div class="card-title">Ser o estar · Meaning changes <span class="pill">8 PHRASES</span></div><div class="vocab-grid" id="fcSE"></div></div>
+    <div class="card"><div class="card-title">Contar una historia · Storytelling <span class="pill">10 EXPRESSIONS</span></div><div class="vocab-grid" id="fcStory"></div></div>
+    <div class="card"><div class="card-title">El pretérito irregular · yo <span class="pill">8 VERBS</span></div><div class="vocab-grid" id="fcPret"></div></div>
+  </section>
+
+  <!-- ═══ GRAMÁTICA ═══ -->
+  <section class="sec" id="sec-gr">
+    <h2 class="sec-title">Gramática · Capítulo 8.1</h2>
+    <p class="sec-sub">irregular preterite · ser vs. estar · emotions in the past · telling a story · relationship verbs</p>
+
+    <div class="gbox">
+      <h3><span class="num">G1</span>El pretérito irregular · u, i, j</h3>
+      <p class="sub">These verbs have a new stem and their own endings, with <strong>no written accents</strong>.</p>
+      <table class="conj-table">
+        <thead><tr><th>Sujeto</th><th>Terminación</th><th>estar · estuv-</th><th>querer · quis-</th><th>decir · dij-</th></tr></thead>
+        <tbody>
+          <tr><td><span class="pn">yo</span></td><td class="accent">-e</td><td>estuv<strong>e</strong></td><td>quis<strong>e</strong></td><td>dij<strong>e</strong></td></tr>
+          <tr><td><span class="pn">tú</span></td><td class="accent">-iste</td><td>estuv<strong>iste</strong></td><td>quis<strong>iste</strong></td><td>dij<strong>iste</strong></td></tr>
+          <tr><td><span class="pn">él / ella / Ud.</span></td><td class="accent">-o</td><td>estuv<strong>o</strong></td><td>quis<strong>o</strong></td><td>dij<strong>o</strong></td></tr>
+          <tr><td><span class="pn">nosotros/as</span></td><td class="accent">-imos</td><td>estuv<strong>imos</strong></td><td>quis<strong>imos</strong></td><td>dij<strong>imos</strong></td></tr>
+          <tr><td><span class="pn">ellos / Uds.</span></td><td class="accent">-ieron</td><td>estuv<strong>ieron</strong></td><td>quis<strong>ieron</strong></td><td>dij<strong>eron</strong></td></tr>
+        </tbody>
+      </table>
+      <div class="three-col">
+        <div class="col-card"><h4>u-stem</h4><div class="ex">estar → <strong>estuv</strong>e</div><div class="ex">tener → <strong>tuv</strong>e</div><div class="ex">poder → <strong>pud</strong>e</div><div class="ex">saber → <strong>sup</strong>e</div></div>
+        <div class="col-card gd"><h4>i-stem</h4><div class="ex">querer → <strong>quis</strong>e</div><div class="ex">venir → <strong>vin</strong>e</div></div>
+        <div class="col-card sg"><h4>j-stem</h4><div class="ex">decir → <strong>dij</strong>e</div><div class="ex">traer → <strong>traj</strong>e</div><div class="ex">ellos: dij<strong>eron</strong>, traj<strong>eron</strong> (no i)</div></div>
+      </div>
+      <div class="ojo"><div class="ojo-title">¡OJO! · meaning changes in the preterite</div><p><em>supe</em> = I found out · <em>pude</em> = I managed to · <em>no pude</em> = I failed to · <em>quise</em> = I tried · <em>no quise</em> = I refused · <em>tuve que</em> = I had to (and did it).</p></div>
+    </div>
+
+    <div class="gbox alt">
+      <h3><span class="num">G2</span>Ser o estar · adjectives that change meaning</h3>
+      <p class="sub"><strong>Ser</strong> = what someone or something is like. <strong>Estar</strong> = how someone or something is right now.</p>
+      <table class="conj-table">
+        <thead><tr><th>Adjetivo</th><th>con SER</th><th>con ESTAR</th></tr></thead>
+        <tbody>
+          <tr><td><strong>aburrido</strong></td><td>La película <strong>es</strong> aburrida. <em>(boring)</em></td><td><strong>Estoy</strong> aburrido. <em>(bored)</em></td></tr>
+          <tr><td><strong>listo</strong></td><td>Mi hermana <strong>es</strong> muy lista. <em>(smart)</em></td><td>¿<strong>Estás</strong> listo? <em>(ready)</em></td></tr>
+          <tr><td><strong>malo</strong></td><td>Ese hombre <strong>es</strong> malo. <em>(bad, evil)</em></td><td><strong>Estoy</strong> malo hoy. <em>(sick)</em> · La leche <strong>está</strong> mala. <em>(spoiled)</em></td></tr>
+          <tr><td><strong>rico</strong></td><td>Su familia <strong>es</strong> rica. <em>(rich)</em></td><td>¡La sopa <strong>está</strong> rica! <em>(delicious)</em></td></tr>
+        </tbody>
+      </table>
+      <div class="ojo"><div class="ojo-title">¡OJO! · feelings use estar</div><p><em>Estoy contento, nervioso, triste, orgulloso.</em> Feelings are states, so they go with <strong>estar</strong>.</p></div>
+    </div>
+
+    <div class="gbox alt2">
+      <h3><span class="num">G3</span>Los sentimientos en el pasado · state or sudden change?</h3>
+      <p class="sub">The same feeling can be the <em>background</em> of the story or a <em>reaction</em> to something that happens.</p>
+      <div class="three-col two">
+        <div class="col-card gd"><h4>Imperfecto · ongoing state</h4><div class="meaning">how you felt, the scene</div>
+          <div class="ex"><strong>Estaba</strong> nervioso antes del examen.</div><div class="ex">Mi abuela <strong>estaba</strong> muy orgullosa de mí.</div><div class="ex"><strong>Tenía</strong> miedo de la oscuridad.</div></div>
+        <div class="col-card"><h4>Pretérito · sudden change</h4><div class="meaning">a reaction at one moment</div>
+          <div class="ex">De repente, <strong>tuve</strong> miedo. <em>(I got scared)</em></div><div class="ex">Cuando vi la nota, <strong>me puse</strong> feliz. <em>(I became)</em></div><div class="ex"><strong>Estuve</strong> triste dos días. <em>(a closed period)</em></div></div>
+      </div>
+      <div class="ojo"><div class="ojo-title">¡OJO! · estaba vs. estuve</div><p><em>Estaba</em> cansado cuando llegué (ongoing, no end) · <em>Estuve</em> en el hospital tres días (a period with a clear end).</p></div>
+    </div>
+
+    <div class="gbox">
+      <h3><span class="num">G4</span>Contar una historia · story structure</h3>
+      <p class="sub">A good story has three parts. Narrative markers tell your listener where you are.</p>
+      <div class="three-col">
+        <div class="col-card gd"><h4>1 · Exposición</h4><div class="meaning">the scene · imperfecto</div><div class="ex">Había una vez… · Cuentan que… · Era una noche… · Hacía frío…</div></div>
+        <div class="col-card"><h4>2 · Complicación</h4><div class="meaning">the problem · pretérito</div><div class="ex">Primero… · Luego… · De repente… · En ese momento…</div></div>
+        <div class="col-card sg"><h4>3 · Resolución</h4><div class="meaning">the ending · pretérito</div><div class="ex">Al final… · Por fin… · Desde entonces…</div></div>
+      </div>
+      <h4 style="font-family:'Playfair Display',serif;color:var(--navy);margin:14px 0 6px;">Verbos de relaciones</h4>
+      <table class="conj-table">
+        <thead><tr><th>Verbo</th><th>Significado</th><th>Ejemplo</th></tr></thead>
+        <tbody>
+          <tr><td><strong>prestar</strong></td><td>to lend</td><td>Le <strong>presté</strong> mi carro a mi hermano.</td></tr>
+          <tr><td><strong>pedir (e → i)</strong> · pedir prestado</td><td>to ask for · to borrow</td><td>Mi amiga me <strong>pidió</strong> veinte dólares.</td></tr>
+          <tr><td><strong>deber</strong></td><td>to owe · must</td><td>Te <strong>debo</strong> un favor. · <strong>Debes</strong> llamar a tu mamá.</td></tr>
+          <tr><td><strong>dejar</strong></td><td>to leave (behind) · to let</td><td><strong>Dejé</strong> las llaves en casa. · Mis padres no me <strong>dejaban</strong> salir.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ═══ EJERCICIOS ═══ -->
+  <section class="sec" id="sec-ej">
+    <h2 class="sec-title">Ejercicios · Práctica</h2>
+    <p class="sec-sub">Ejercicio 1 · 2 · 3 · 4 · 5 · 6 · 7 · 8</p>
+    <div class="card">
+      <div class="card-title">Ejercicio 1 · Pretérito irregular · u-stem <span class="pill">ESTUVE · TUVE · PUDE · SUPE</span></div>
+      <p style="font-size:0.92rem;color:var(--text-light);margin-bottom:14px;">Write the preterite. Remember: no written accents in these forms.</p>
+      <div class="ex-item"><span class="ex-num">1</span><span class="ex-text">Ayer yo <input class="blk" id="e1_1" data-answer="estuve" placeholder="___"> en la biblioteca toda la tarde. <span class="ex-hint">(estar)</span></span></div>
+      <div class="ex-item"><span class="ex-num">2</span><span class="ex-text">¿Dónde <input class="blk" id="e1_2" data-answer="estuviste" placeholder="___"> tú el fin de semana? <span class="ex-hint">(estar)</span></span></div>
+      <div class="ex-item"><span class="ex-num">3</span><span class="ex-text">Mi hermano <input class="blk" id="e1_3" data-answer="tuvo" placeholder="___"> que trabajar el sábado. <span class="ex-hint">(tener)</span></span></div>
+      <div class="ex-item"><span class="ex-num">4</span><span class="ex-text">Nosotros no <input class="blk" id="e1_4" data-answer="pudimos" placeholder="___"> ir a la fiesta. <span class="ex-hint">(poder)</span></span></div>
+      <div class="ex-item"><span class="ex-num">5</span><span class="ex-text">Anoche <input class="blk" id="e1_5" data-answer="supe" placeholder="___"> que mi prima tiene novio. <span class="ex-hint">(saber · found out)</span></span></div>
+      <div class="ex-item"><span class="ex-num">6</span><span class="ex-text">Mis padres <input class="blk" id="e1_6" data-answer="tuvieron" placeholder="___"> un accidente, pero están bien. <span class="ex-hint">(tener)</span></span></div>
+      <div class="ex-item"><span class="ex-num">7</span><span class="ex-text">¿Cuándo <input class="blk" id="e1_7" data-answer="supiste" placeholder="___"> tú la noticia? <span class="ex-hint">(saber)</span></span></div>
+      <div class="ex-item"><span class="ex-num">8</span><span class="ex-text">Los niños <input class="blk" id="e1_8" data-answer="estuvieron" placeholder="___"> en casa de su abuela. <span class="ex-hint">(estar)</span></span></div>
+      <button class="chk-btn" onclick="checkBlanks('e1_1,e1_2,e1_3,e1_4,e1_5,e1_6,e1_7,e1_8','rs1')">Check Answers</button>
+      <button class="rst-btn" onclick="resetBlanks('e1_1,e1_2,e1_3,e1_4,e1_5,e1_6,e1_7,e1_8','rs1')">Reset</button>
+      <div class="res-msg" id="rs1" aria-live="polite"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Ejercicio 2 · Pretérito irregular · i-stem y j-stem <span class="pill">QUISE · VINE · DIJE · TRAJE</span></div>
+      <p style="font-size:0.92rem;color:var(--text-light);margin-bottom:14px;">Write the preterite. j-stem verbs drop the i in ellos: <em>dijeron, trajeron</em>.</p>
+      <div class="ex-item"><span class="ex-num">1</span><span class="ex-text">Yo <input class="blk" id="e2_1" data-answer="quise" placeholder="___"> llamarte, pero no pude. <span class="ex-hint">(querer · tried)</span></span></div>
+      <div class="ex-item"><span class="ex-num">2</span><span class="ex-text">Mis primos <input class="blk" id="e2_2" data-answer="vinieron" placeholder="___"> a visitarnos en diciembre. <span class="ex-hint">(venir)</span></span></div>
+      <div class="ex-item"><span class="ex-num">3</span><span class="ex-text">¿Por qué no <input class="blk" id="e2_3" data-answer="viniste" placeholder="___"> tú a clase ayer? <span class="ex-hint">(venir)</span></span></div>
+      <div class="ex-item"><span class="ex-num">4</span><span class="ex-text">Ella me <input class="blk" id="e2_4" data-answer="dijo" placeholder="___"> un secreto. <span class="ex-hint">(decir)</span></span></div>
+      <div class="ex-item"><span class="ex-num">5</span><span class="ex-text">Nosotros <input class="blk" id="e2_5" data-answer="trajimos" placeholder="___"> pupusas a la fiesta. <span class="ex-hint">(traer)</span></span></div>
+      <div class="ex-item"><span class="ex-num">6</span><span class="ex-text">Mis amigos me <input class="blk" id="e2_6" data-answer="dijeron" placeholder="___"> la verdad. <span class="ex-hint">(decir)</span></span></div>
+      <div class="ex-item"><span class="ex-num">7</span><span class="ex-text">¿Qué <input class="blk" id="e2_7" data-answer="trajiste" placeholder="___"> tú para el almuerzo? <span class="ex-hint">(traer)</span></span></div>
+      <div class="ex-item"><span class="ex-num">8</span><span class="ex-text">Mi novio no <input class="blk" id="e2_8" data-answer="quiso" placeholder="___"> bailar conmigo. <span class="ex-hint">(querer · refused)</span></span></div>
+      <button class="chk-btn" onclick="checkBlanks('e2_1,e2_2,e2_3,e2_4,e2_5,e2_6,e2_7,e2_8','rs2')">Check Answers</button>
+      <button class="rst-btn" onclick="resetBlanks('e2_1,e2_2,e2_3,e2_4,e2_5,e2_6,e2_7,e2_8','rs2')">Reset</button>
+      <div class="res-msg" id="rs2" aria-live="polite"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Ejercicio 3 · ¿Ser o estar? <span class="pill">CAMBIO DE SIGNIFICADO</span></div>
+      <p style="font-size:0.92rem;color:var(--text-light);margin-bottom:14px;">Choose the verb that gives the meaning in parentheses.</p>
+      <div id="seCont"></div>
+      <div class="res-msg" id="rs3" aria-live="polite"></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Ejercicio 4 · ¿Estado o cambio? <span class="pill">SENTIMIENTOS</span></div>
+      <p style="font-size:0.92rem;color:var(--text-light);margin-bottom:14px;">Ongoing state (imperfect) or sudden reaction (preterite)? Choose the best form.</p>
+      <div id="emoCont"></div>
+      <div class="res-msg" id="rs4" aria-live="polite"></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Ejercicio 5 · Una cita desastrosa <span class="pill">HISTORIA COMPLETA</span></div>
+      <p style="font-size:0.92rem;color:var(--text-light);margin-bottom:14px;">Read the whole story first. Choose the <strong>preterite</strong> or the <strong>imperfect</strong> for each verb.</p>
+      <div class="ex-item"><span class="ex-num">1</span><span class="ex-text"><input class="blk" id="e5_1" data-answer="Era" placeholder="___"> un sábado de octubre. <span class="ex-hint">(ser)</span></span></div>
+      <div class="ex-item"><span class="ex-num">2</span><span class="ex-text">Yo <input class="blk" id="e5_2" data-answer="estaba" placeholder="___"> muy nervioso porque tenía mi primera cita con Laura. <span class="ex-hint">(estar)</span></span></div>
+      <div class="ex-item"><span class="ex-num">3</span><span class="ex-text">Primero, <input class="blk" id="e5_3" data-answer="fui" placeholder="___"> a su casa en autobús. <span class="ex-hint">(ir)</span></span></div>
+      <div class="ex-item"><span class="ex-num">4</span><span class="ex-text">Luego, le <input class="blk" id="e5_4" data-answer="traje" placeholder="___"> flores, pero ella es alérgica. <span class="ex-hint">(traer)</span></span></div>
+      <div class="ex-item"><span class="ex-num">5</span><span class="ex-text">En el restaurante, la comida <input class="blk" id="e5_5" data-answer="estaba" placeholder="___"> muy rica. <span class="ex-hint">(estar)</span></span></div>
+      <div class="ex-item"><span class="ex-num">6</span><span class="ex-text">Mientras nosotros <input class="blk" id="e5_6" data-answer="cenábamos" placeholder="___">, mi exnovia entró al restaurante. <span class="ex-hint">(cenar)</span></span></div>
+      <div class="ex-item"><span class="ex-num">7</span><span class="ex-text">De repente, ella <input class="blk" id="e5_7" data-answer="vino" placeholder="___"> a nuestra mesa y me saludó. <span class="ex-hint">(venir)</span></span></div>
+      <div class="ex-item"><span class="ex-num">8</span><span class="ex-text">En ese momento, Laura <input class="blk" id="e5_8" data-answer="supo" placeholder="___"> la verdad: yo todavía hablaba con mi exnovia. <span class="ex-hint">(saber)</span></span></div>
+      <div class="ex-item"><span class="ex-num">9</span><span class="ex-text">Yo <input class="blk" id="e5_9" data-answer="quise" placeholder="___"> explicarle todo, pero ella se fue. <span class="ex-hint">(querer)</span></span></div>
+      <div class="ex-item"><span class="ex-num">10</span><span class="ex-text">Al final, yo <input class="blk" id="e5_10" data-answer="tuve" placeholder="___"> que pagar la cena solo. <span class="ex-hint">(tener)</span></span></div>
+      <button class="chk-btn" onclick="checkBlanks('e5_1,e5_2,e5_3,e5_4,e5_5,e5_6,e5_7,e5_8,e5_9,e5_10','rs5')">Check Answers</button>
+      <button class="rst-btn" onclick="resetBlanks('e5_1,e5_2,e5_3,e5_4,e5_5,e5_6,e5_7,e5_8,e5_9,e5_10','rs5')">Reset</button>
+      <div class="res-msg" id="rs5" aria-live="polite"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Ejercicio 6 · ¿Exposición, complicación o resolución? <span class="pill">ESTRUCTURA</span></div>
+      <p style="font-size:0.92rem;color:var(--text-light);margin-bottom:14px;">Which part of a story is each sentence from?</p>
+      <div id="partCont"></div>
+      <div class="res-msg" id="rs6" aria-live="polite"></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Ejercicio 7 · Verbos de relaciones <span class="pill">PRESTAR · PEDIR · DEBER · DEJAR</span></div>
+      <div class="word-bank"><span class="word-bank-label">Word Bank</span><span class="word-bank-words"><span>prestar</span><span>pedir</span><span>deber</span><span>dejar</span></span></div>
+      <p style="font-size:0.92rem;color:var(--text-light);margin-bottom:14px;">Use the verb in the tense shown.</p>
+      <div class="ex-item"><span class="ex-num">1</span><span class="ex-text">Mi hermana me <input class="blk" id="e7_1" data-answer="prestó" placeholder="___"> su carro para ir al trabajo. <span class="ex-hint">(prestar · pretérito)</span></span></div>
+      <div class="ex-item"><span class="ex-num">2</span><span class="ex-text">Yo le <input class="blk" id="e7_2" data-answer="debo" placeholder="___"> veinte dólares a mi amigo. <span class="ex-hint">(deber · presente)</span></span></div>
+      <div class="ex-item"><span class="ex-num">3</span><span class="ex-text">¡Ay, no! <input class="blk" id="e7_3" data-answer="Dejé" placeholder="___"> las llaves en casa. <span class="ex-hint">(dejar · pretérito)</span></span></div>
+      <div class="ex-item"><span class="ex-num">4</span><span class="ex-text">Mi compañero me <input class="blk" id="e7_4" data-answer="pidió" placeholder="___"> prestado un lápiz. <span class="ex-hint">(pedir · pretérito)</span></span></div>
+      <div class="ex-item"><span class="ex-num">5</span><span class="ex-text">De niño, mis padres no me <input class="blk" id="e7_5" data-answer="dejaban" placeholder="___"> salir de noche. <span class="ex-hint">(dejar · imperfecto)</span></span></div>
+      <div class="ex-item"><span class="ex-num">6</span><span class="ex-text">Tú <input class="blk" id="e7_6" data-answer="debes" placeholder="___"> llamar a tu abuela más seguido. <span class="ex-hint">(deber · presente)</span></span></div>
+      <button class="chk-btn" onclick="checkBlanks('e7_1,e7_2,e7_3,e7_4,e7_5,e7_6','rs7')">Check Answers</button>
+      <button class="rst-btn" onclick="resetBlanks('e7_1,e7_2,e7_3,e7_4,e7_5,e7_6','rs7')">Reset</button>
+      <div class="res-msg" id="rs7" aria-live="polite"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Ejercicio 8 · Respuesta corta · Tu historia <span class="pill">SE CORRIGE SOLA</span></div>
+      <p style="font-size:0.92rem;color:var(--text-light);margin-bottom:14px;">Answer in full Spanish sentences. Write the accents so the page can find your verbs.</p>
+      <div id="shortCont"></div>
+      <button class="chk-btn" onclick="checkShort()">Check My Answers</button>
+      <button class="rst-btn" onclick="resetShort()">Reset</button>
+      <div class="res-msg" id="rs8" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- ═══ LEYENDAS ═══ -->
+  <section class="sec" id="sec-le">
+    <h2 class="sec-title">Leyendas · Historias, cuentos y leyendas</h2>
+    <p class="sec-sub">México y Centroamérica · notice the irregular preterite, the imperfect and the feelings</p>
+    <div class="le-pick" role="tablist" aria-label="Leyendas">
+      <button type="button" class="le-btn active" onclick="showReading(1,this)">1 · La Llorona</button>
+      <button type="button" class="le-btn" onclick="showReading(2,this)">2 · El Cadejo</button>
+      <button type="button" class="le-btn" onclick="showReading(3,this)">3 · La Siguanaba</button>
+    </div>
+
+    <div class="card le-card" id="lect1">
+      <div class="card-title">Leyenda 1 · La Llorona <span class="pill">MÉXICO Y CENTROAMÉRICA</span></div>
+      <div class="reading" id="reading1">
+        <p>Cuentan que hace muchos años, en un pueblo de México, vivía una mujer muy hermosa que se llamaba María. Era pobre, pero estaba enamorada de un hombre rico. Se casaron y tuvieron dos hijos.</p>
+        <p>Al principio, la familia era feliz. Pero un día, el hombre dejó a María por otra mujer. María estaba tan triste y tan enojada que no pudo controlarse: llevó a sus hijos al río y los dejó en el agua. La corriente se los llevó.</p>
+        <p>En ese momento, María entendió su terrible error. Quiso salvarlos y los buscó toda la noche, pero no pudo encontrarlos. Desde entonces, su espíritu camina cerca de los ríos y los lagos, vestido de blanco, y llora: «¡Ay, mis hijos!».</p>
+        <p>Muchas personas dicen que la escucharon. Cuando yo era niño, mi abuela siempre me decía: «Si sales solo de noche, la Llorona te puede llevar». Por eso, yo nunca salía de noche.</p>
+        <p class="gl">cuentan que = they say that · hermoso/a = beautiful · enamorado/a de = in love with · casarse = to get married · dejar = to leave · la corriente = the current · salvar = to save · el espíritu = spirit · llorar = to cry</p>
+      </div>
+      <button class="toggle-btn" style="margin:0 0 14px 0;" onclick="speakEl('reading1')">Escuchar la leyenda</button>
+      <button class="rst-btn" style="margin-top:0;" onclick="stopSpeak()">Stop</button>
+      <button class="rst-btn ra-jump" style="margin-top:0;" onclick="raOpen(2)">Practica en voz alta →</button>
+      <h4 class="le-h">A · Comprensión</h4>
+      <div id="lloCont"></div>
+      <div class="res-msg" id="rsLlo" aria-live="polite"></div>
+      <h4 class="le-h">B · Los sentimientos de María</h4>
+      <p class="le-p">Complete with the verb in the correct tense, as in the legend.</p>
+      <div class="ex-item"><span class="ex-num">1</span><span class="ex-text">María <input class="blk" id="r1_1" data-answer="estaba" placeholder="___"> enamorada de un hombre rico. <span class="ex-hint">(estar)</span></span></div>
+      <div class="ex-item"><span class="ex-num">2</span><span class="ex-text">Se casaron y <input class="blk" id="r1_2" data-answer="tuvieron" placeholder="___"> dos hijos. <span class="ex-hint">(tener)</span></span></div>
+      <div class="ex-item"><span class="ex-num">3</span><span class="ex-text">María estaba tan triste que no <input class="blk" id="r1_3" data-answer="pudo" placeholder="___"> controlarse. <span class="ex-hint">(poder)</span></span></div>
+      <div class="ex-item"><span class="ex-num">4</span><span class="ex-text"><input class="blk" id="r1_4" data-answer="Quiso" placeholder="___"> salvar a sus hijos, pero no pudo. <span class="ex-hint">(querer)</span></span></div>
+      <div class="ex-item"><span class="ex-num">5</span><span class="ex-text">Muchas personas <input class="blk" id="r1_5" data-answer="dicen" placeholder="___"> que la escucharon. <span class="ex-hint">(decir · presente)</span></span></div>
+      <button class="chk-btn" onclick="checkBlanks('r1_1,r1_2,r1_3,r1_4,r1_5','rsRead1')">Check Answers</button>
+      <button class="rst-btn" onclick="resetBlanks('r1_1,r1_2,r1_3,r1_4,r1_5','rsRead1')">Reset</button>
+      <div class="res-msg" id="rsRead1" aria-live="polite"></div>
+    </div>
+
+    <div class="card le-card" id="lect2" hidden>
+      <div class="card-title">Leyenda 2 · El Cadejo <span class="pill">EL SALVADOR · GUATEMALA</span></div>
+      <div class="reading" id="reading2">
+        <p>En Centroamérica, la gente cuenta historias del Cadejo, un perro grande y misterioso con ojos rojos como el fuego. Hay dos cadejos: el blanco, que protege a las personas, y el negro, que es malo y las asusta.</p>
+        <p>Mi tío Ernesto vivía en un pueblo de El Salvador. Una noche, volvía a casa muy tarde. No había luna, hacía frío y el camino estaba oscuro. Mi tío estaba cansado y un poco nervioso.</p>
+        <p>De repente, escuchó pasos detrás de él. Miró hacia atrás y descubrió un perro negro enorme. Mi tío tuvo mucho miedo y no pudo moverse. En ese momento, vino un perro blanco y se paró entre mi tío y el perro negro. Los dos perros pelearon y el perro negro desapareció.</p>
+        <p>El perro blanco caminó con mi tío hasta la puerta de su casa. Cuando llegó, mi tío miró hacia atrás para darle las gracias, pero el perro ya no estaba. Al día siguiente, nos dijo a todos: «Esa noche supe que el Cadejo blanco existe».</p>
+        <p class="gl">misterioso/a = mysterious · proteger = to protect · asustar = to scare · el camino = road, path · los pasos = footsteps · descubrir = to discover · moverse = to move · pararse = to stand · pelear = to fight · desaparecer = to disappear</p>
+      </div>
+      <button class="toggle-btn" style="margin:0 0 14px 0;" onclick="speakEl('reading2')">Escuchar la leyenda</button>
+      <button class="rst-btn" style="margin-top:0;" onclick="stopSpeak()">Stop</button>
+      <button class="rst-btn ra-jump" style="margin-top:0;" onclick="raOpen(3)">Practica en voz alta →</button>
+      <h4 class="le-h">A · ¿Cierto o falso?</h4>
+      <div id="cadCont"></div>
+      <div class="res-msg" id="rsCad" aria-live="polite"></div>
+      <h4 class="le-h">B · Caza de verbos · Find the irregular preterite</h4>
+      <p class="le-p">In paragraphs 3 and 4, click every verb in the <strong>irregular preterite</strong> (u-stem, i-stem or j-stem). There are <strong>5</strong>. Careful: the other preterites are regular.</p>
+      <div class="hunt-count" id="huntCount">0 seleccionadas</div>
+      <div class="hunt" id="huntText"></div>
+      <button class="chk-btn" onclick="checkHunt()">Check</button>
+      <button class="rst-btn" onclick="resetHunt()">Reset</button>
+      <div class="res-msg" id="rsHunt" aria-live="polite"></div>
+    </div>
+
+    <div class="card le-card" id="lect3" hidden>
+      <div class="card-title">Leyenda 3 · La Siguanaba <span class="pill">EL SALVADOR · GUATEMALA</span></div>
+      <div class="reading" id="reading3">
+        <p>La Siguanaba es una de las leyendas más famosas de El Salvador. Según la tradición, antes era una mujer hermosa que se llamaba Sihuehuet. Estaba casada, pero no era fiel a su esposo. Por eso, el dios Tláloc la castigó: le quitó su belleza y la convirtió en un espíritu que vive cerca de los ríos. Su hijo, el Cipitío, se quedó como un niño para siempre.</p>
+        <p>Cuentan que la Siguanaba aparece de noche a los hombres que caminan solos. Desde lejos, parece una mujer joven con el pelo largo que lava ropa en el río. Los hombres la siguen porque creen que es muy bonita.</p>
+        <p>Un viernes por la noche, un joven llamado Tomás regresaba de una fiesta. Estaba alegre y un poco distraído. Cerca del río, vio a una mujer de espaldas y quiso hablar con ella. Le dijo: «Señorita, ¿puedo acompañarla?». Ella se volteó y Tomás vio que tenía cara de caballo. Tomás estaba tan asustado que corrió toda la noche.</p>
+        <p>Al final, llegó a su casa al amanecer. Estuvo enfermo tres días y nunca más caminó solo de noche. Su abuela le dijo: «Ya ves, mijo: la Siguanaba asusta a los hombres que andan solos de noche».</p>
+        <p class="gl">según = according to · fiel = faithful · castigar = to punish · quitar = to take away · la belleza = beauty · de espaldas = from behind · acompañar = to go with · voltearse = to turn around · el caballo = horse · al amanecer = at dawn</p>
+      </div>
+      <button class="toggle-btn" style="margin:0 0 14px 0;" onclick="speakEl('reading3')">Escuchar la leyenda</button>
+      <button class="rst-btn" style="margin-top:0;" onclick="stopSpeak()">Stop</button>
+      <button class="rst-btn ra-jump" style="margin-top:0;" onclick="raOpen(4)">Practica en voz alta →</button>
+      <h4 class="le-h">A · La estructura de la historia</h4>
+      <p class="le-p">Is each part of Tomás's story the exposition, the complication or the resolution?</p>
+      <div id="sigCont"></div>
+      <div class="res-msg" id="rsSig" aria-live="polite"></div>
+      <h4 class="le-h">B · Completa con el pretérito irregular</h4>
+      <p class="le-p">Write the verb in the preterite.</p>
+      <div class="ex-item"><span class="ex-num">1</span><span class="ex-text">Tomás <input class="blk" id="r3_1" data-answer="quiso" placeholder="___"> hablar con la mujer. <span class="ex-hint">(querer)</span></span></div>
+      <div class="ex-item"><span class="ex-num">2</span><span class="ex-text">Tomás le <input class="blk" id="r3_2" data-answer="dijo" placeholder="___"> algo a la mujer. <span class="ex-hint">(decir)</span></span></div>
+      <div class="ex-item"><span class="ex-num">3</span><span class="ex-text">Esa noche, Tomás <input class="blk" id="r3_3" data-answer="tuvo" placeholder="___"> mucho miedo. <span class="ex-hint">(tener)</span></span></div>
+      <div class="ex-item"><span class="ex-num">4</span><span class="ex-text">Tomás <input class="blk" id="r3_4" data-answer="estuvo" placeholder="___"> enfermo tres días. <span class="ex-hint">(estar)</span></span></div>
+      <div class="ex-item"><span class="ex-num">5</span><span class="ex-text">Al día siguiente, sus amigos <input class="blk" id="r3_5" data-answer="vinieron" placeholder="___"> a visitarlo. <span class="ex-hint">(venir)</span></span></div>
+      <button class="chk-btn" onclick="checkBlanks('r3_1,r3_2,r3_3,r3_4,r3_5','rsRead3')">Check Answers</button>
+      <button class="rst-btn" onclick="resetBlanks('r3_1,r3_2,r3_3,r3_4,r3_5','rsRead3')">Reset</button>
+      <div class="res-msg" id="rsRead3" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- ═══ LEE EN VOZ ALTA ═══ -->
+  <section class="sec" id="sec-ra">
+    <h2 class="sec-title">Lee en voz alta · Read along</h2>
+    <p class="sec-sub">reading · pronunciation · fluency · no microphone needed</p>
+    <div class="ch-intro">
+      <div class="label">Práctica libre · Free practice</div>
+      <h2>Read aloud while the words turn green</h2>
+      <p>Choose a text and a mode, press <strong>Empezar</strong>, and read <strong>out loud</strong>. The words light up and turn <strong>green</strong> as you go, so you keep a steady rhythm. Your microphone is never used. This tab is for practice only: <strong>it does not count</strong> toward your progress or your report, so repeat it as many times as you like. Legends are made to be told out loud: read them with feeling!</p>
+    </div>
+
+    <div class="ra-wrap">
+      <div class="ra-row">
+        <span class="ra-lbl">1 · Texto</span>
+        <div class="ra-chips" id="raTexts"></div>
+      </div>
+      <div class="ra-row">
+        <span class="ra-lbl">2 · Modo</span>
+        <div class="ra-modes" id="raModes">
+          <button type="button" class="ra-mode active" data-m="listen" onclick="raSetMode('listen')"><b>Escucha y sigue</b><span>The voice reads. Follow the green words and read along softly.</span></button>
+          <button type="button" class="ra-mode" data-m="echo" onclick="raSetMode('echo')"><b>Escucha y repite</b><span>Hear one sentence, then it is your turn to read it.</span></button>
+          <button type="button" class="ra-mode" data-m="pace" onclick="raSetMode('pace')"><b>Lee conmigo</b><span>No audio. You read out loud and keep up with the green words.</span></button>
+        </div>
+      </div>
+      <div class="ra-row ra-ctrls">
+        <span class="ra-lbl">3 · Velocidad</span>
+        <div class="ra-speed" id="raSpeed" role="group" aria-label="Speed">
+          <button type="button" data-s="0" onclick="raSetSpeed(0)">Muy lenta</button>
+          <button type="button" data-s="1" class="active" onclick="raSetSpeed(1)">Lenta</button>
+          <button type="button" data-s="2" onclick="raSetSpeed(2)">Normal</button>
+          <button type="button" data-s="3" onclick="raSetSpeed(3)">Rápida</button>
+        </div>
+        <label class="ra-tog"><input type="checkbox" id="raLinks" onchange="raToggleLinks()"> Mostrar enlaces ‿</label>
+        <label class="ra-tog"><input type="checkbox" id="raBig" onchange="raToggleBig()"> Letra grande</label>
+      </div>
+      <div class="ra-warn" id="raWarn" hidden></div>
+
+      <div class="ra-stage">
+        <div class="ra-stage-top">
+          <span class="ra-title" id="raTitle">…</span>
+          <span class="ra-turn" id="raTurn" aria-live="polite"></span>
+        </div>
+        <div class="ra-prog"><div class="ra-prog-fill" id="raProg"></div></div>
+        <div class="ra-text" id="raText" aria-live="off"></div>
+        <div class="ra-btns">
+          <button type="button" class="pr-like ra-go" id="raGo" onclick="raToggle()">▶ Empezar</button>
+          <button type="button" class="pr-like ra-sec" onclick="raRestart()">↺ Desde el principio</button>
+          <span class="ra-stat">Tiempo <b id="raTime">0:00</b></span>
+          <span class="ra-stat">Palabras <b id="raCount">0 / 0</b></span>
+          <span class="ra-stat">Ritmo <b id="raWpm">·</b></span>
+        </div>
+        <p class="ra-hint">Tip: tap any word to hear it and to start from that sentence. Press the space bar to start or pause.</p>
+      </div>
+
+      <div class="ra-done" id="raDone" hidden>
+        <h3>¡Terminaste!</h3>
+        <p id="raSummary"></p>
+        <p class="ra-q">¿Cómo te fue? · How did it go?</p>
+        <div class="ra-self">
+          <button type="button" onclick="raSelf(0)">Me costó · It was hard</button>
+          <button type="button" onclick="raSelf(1)">Bien · Pretty good</button>
+          <button type="button" onclick="raSelf(2)">¡Muy fluido! · Smooth</button>
+        </div>
+        <p class="ra-advice" id="raAdvice"></p>
+      </div>
+
+      <div class="ra-keys">
+        <div class="ra-lbl">Palabras para practicar · tap to hear</div>
+        <div class="ra-chips" id="raKeys"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">¿Cómo practicar? · A routine that works <span class="pill">TIPS</span></div>
+      <div class="obj-grid">
+        <div class="obj"><span class="obj-num">1</span><span class="obj-text"><strong>Escucha y sigue</strong> first, at <em>Lenta</em>. Whisper the words as they turn green.</span></div>
+        <div class="obj"><span class="obj-num">2</span><span class="obj-text"><strong>Escucha y repite</strong>: copy the voice's rhythm and intonation, sentence by sentence.</span></div>
+        <div class="obj"><span class="obj-num">3</span><span class="obj-text"><strong>Lee conmigo</strong>: read the whole text out loud on your own. Next time, choose a faster speed.</span></div>
+        <div class="obj"><span class="obj-num">4</span><span class="obj-text">Tell it like a storyteller: slow down for the scene, speed up at <em>de repente</em>, and pause before the ending.</span></div>
+        <div class="obj"><span class="obj-num">5</span><span class="obj-text">Turn on <strong>enlaces ‿</strong> and say linked words as one: <em>tuvo‿un</em>, <em>dijo‿a</em>, <em>con‿ella</em>.</span></div>
+        <div class="obj"><span class="obj-num">6</span><span class="obj-text">Stress the right syllable: <em>es-TU-ve</em>, <em>DI-jo</em>, <em>TRA-je</em> (no accent mark in the irregular preterite).</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ REPASO FINAL ═══ -->
+  <section class="sec" id="sec-rv">
+    <h2 class="sec-title">Repaso final · Semanas 1 a 9</h2>
+    <p class="sec-sub">Capítulos 5.1 · 5.2 · 6.1 · 6.2 · 7.1 · 7.2 · 8.1 · get ready for finals week</p>
+    <div class="ch-intro">
+      <div class="label">Preparación para el examen final</div>
+      <h2>One page, every chapter</h2>
+      <p>Use the summary to remember the key point of each chapter, then answer the 28 review questions (4 per chapter). You see the explanation right away. When you finish, look at your score for each chapter to know what to study before the final.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">Resumen · The key point of each chapter <span class="pill">7 CAPÍTULOS</span></div>
+      <div class="rv-grid">
+        <div class="rv-card"><b>5.1 · Rutina y deportes</b><span>Stem-changers: quiero, puedo, pido, juego (not nosotros). Reflexives: me levanto, te duchas, se acuesta.</span></div>
+        <div class="rv-card"><b>5.2 · Tiempo y gustos</b><span>Me gusta / me encantan (agree with the thing). Tener que + inf. Hace frío, llueve. Primero, segundo, tercer…</span></div>
+        <div class="rv-card"><b>6.1 · Viajes</b><span>Regular preterite: -é, -aste, -ó, -amos, -aron · -í, -iste, -ió, -imos, -ieron. llegué, pagué, busqué.</span></div>
+        <div class="rv-card"><b>6.2 · Fiestas</b><span>fui / fue (ir = ser), hice / hizo. estar + -ando / -iendo. ir a + infinitivo. que, donde, quien.</span></div>
+        <div class="rv-card"><b>7.1 · Generaciones</b><span>Imperfect: -aba, -ía (habits, descriptions, age). ya no / todavía + present. Stages of life.</span></div>
+        <div class="rv-card"><b>7.2 · Pasado y presente</b><span>era, iba, veía. Preterite = action, imperfect = scene. mío, tuyo, suyo, nuestro (agree with the thing).</span></div>
+        <div class="rv-card"><b>8.1 · Relaciones</b><span>estuve, tuve, pude, supe, quise, vine, dije, traje. ser / estar aburrido, listo, malo, rico.</span></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">28 preguntas de repaso <span class="pill">4 POR CAPÍTULO</span></div>
+      <div id="revCont"></div>
+      <div class="res-msg" id="rsRev" aria-live="polite"></div>
+      <div class="rv-score" id="rvScore"></div>
+    </div>
+  </section>
+
+  <!-- ═══ JUEGOS ═══ -->
+  <section class="sec" id="sec-ju">
+    <h2 class="sec-title">Juegos · Play &amp; review</h2>
+    <p class="sec-sub">feelings · irregular preterite · speed challenge · quiz</p>
+
+    <div class="card">
+      <div class="card-title">Juego 1 · Emparejamiento · Los sentimientos <span class="pill">MATCHING</span></div>
+      <p style="font-size:0.9rem;color:var(--text-light);margin-bottom:14px;">Click a Spanish word, then its English meaning. Correct pairs turn green.</p>
+      <div id="matchCont"></div>
+      <button class="rst-btn" style="margin-left:0;" onclick="buildMatch('w')">Shuffle / Reset</button>
+      <div class="res-msg" id="rsMatch" aria-live="polite"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Juego 2 · Emparejamiento · ¿Qué hiciste? <span class="pill">PRETÉRITO IRREGULAR</span></div>
+      <p style="font-size:0.9rem;color:var(--text-light);margin-bottom:14px;">Match each infinitive with its <em>yo</em> form in the preterite.</p>
+      <div id="matchCont2"></div>
+      <button class="rst-btn" style="margin-left:0;" onclick="buildMatch('m')">Shuffle / Reset</button>
+      <div class="res-msg" id="rsMatch2" aria-live="polite"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Juego 3 · Reto rápido · Completa la oración <span class="pill">12 ORACIONES</span></div>
+      <p style="font-size:0.9rem;color:var(--text-light);margin-bottom:14px;">Choose the word that completes each sentence. Accents count!</p>
+      <div class="game-wrap" id="gameWrap">
+        <div class="game-scorebar">
+          <div>Puntos<b id="gScore">0</b></div>
+          <div>Racha<b id="gStreak">0</b></div>
+          <div>Pregunta<b id="gNum">1/12</b></div>
+        </div>
+        <div class="game-prompt" id="gPrompt">…</div>
+        <div class="game-sub" id="gSub"></div>
+        <div class="game-opts" id="gOpts"></div>
+        <div class="game-feedback" id="gFb"></div>
+      </div>
+      <button class="rst-btn" style="margin-left:0;" onclick="startGame()">Restart Game</button>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Juego 4 · Opción múltiple · Capítulo 8.1 <span class="pill">QUIZ</span></div>
+      <p style="font-size:0.9rem;color:var(--text-light);margin-bottom:14px;">Ten questions on this week's grammar and vocabulary. Pick the best answer, then score it.</p>
+      <div id="quizCont"></div>
+      <button class="chk-btn" onclick="checkQuiz()">Score My Quiz</button>
+      <button class="rst-btn" onclick="resetQuiz()">Reset</button>
+      <div class="res-msg" id="rsQuiz" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <div class="footer">
+    SPSCC · Spanish 122 · Semana 9 · Capítulo 8.1 · Relaciones y repaso
+  </div>
+
+</div>
+
+<script>
+/* ── Tabs ── */
+function switchTab(tab, el){
+  document.querySelectorAll('.tab').forEach(function(b){ b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+  document.querySelectorAll('.sec').forEach(function(s){ s.classList.remove('active'); });
+  if(el){ el.classList.add('active'); el.setAttribute('aria-selected','true'); }
+  var s = document.getElementById('sec-'+tab); if(s) s.classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+/* ── Helpers ── */
+function normalize(s){ if(!s) return ''; return s.toString().trim().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/\s+/g,' '); }
+function wordsOf(str){ return normalize(str).replace(/[¿?¡!.,;:"()]/g,' ').split(/\s+/).filter(Boolean); }
+function val(id){ var el=document.getElementById(id); return el?(el.value||'').trim():''; }
+function setMsg(id, ok, text){ var m=document.getElementById(id); if(!m) return; m.textContent=text; m.className='res-msg '+(ok?'ok':'ng'); }
+function showFb(id, ok, msg){ var fb=document.getElementById(id); if(!fb) return; fb.className='task-fb show '+(ok?'ok':'ng'); fb.textContent=(ok?'✓ ':'✗ ')+msg; }
+function clearFb(id){ var fb=document.getElementById(id); if(fb) fb.className='task-fb'; }
+
+/* ── Audio: browser Spanish voice (Web Speech API) ── */
+var SPK = '<svg class="icon-speaker" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg>';
+var esVoice = null;
+function pickVoice(){
+  if(!('speechSynthesis' in window)) return;
+  var vs = window.speechSynthesis.getVoices(); if(!vs || !vs.length) return;
+  var prefs = ['es-MX','es-US','es-419','es-CO','es-ES'];
+  for(var p=0;p<prefs.length;p++){ for(var i=0;i<vs.length;i++){ if((vs[i].lang||'').replace('_','-')===prefs[p]){ esVoice=vs[i]; return; } } }
+  for(var j=0;j<vs.length;j++){ if((vs[j].lang||'').toLowerCase().indexOf('es')===0){ esVoice=vs[j]; return; } }
+}
+if('speechSynthesis' in window){ pickVoice(); window.speechSynthesis.onvoiceschanged = pickVoice; }
+function speak(parts){
+  try{
+    if(!('speechSynthesis' in window)) return;
+    var synth = window.speechSynthesis; synth.cancel();
+    parts.forEach(function(t){
+      var u = new SpeechSynthesisUtterance(t.replace(/\(.*?\)/g,''));
+      u.lang = esVoice ? esVoice.lang : 'es-MX'; if(esVoice) u.voice = esVoice; u.rate = 0.9;
+      synth.speak(u);
+    });
+  }catch(e){}
+}
+function stopSpeak(){ try{ window.speechSynthesis.cancel(); }catch(e){} }
+function speakReading(){ var ps=[].slice.call(document.querySelectorAll('#readingText p:not(.gl)')).map(function(p){ return p.textContent; }); speak(ps); }
+
+var flipped = {};
+function buildFlash(key, containerId, extraClass){
+  var c = document.getElementById(containerId);
+  FC[key].forEach(function(v, i){
+    var card = document.createElement('div');
+    card.className = 'vocab-card' + (extraClass ? ' '+extraClass : '');
+    card.setAttribute('role','button'); card.setAttribute('tabindex','0');
+    card.setAttribute('aria-label', v.es + '. Flip to see the translation and hear the pronunciation.');
+    card.innerHTML = '<div class="vocab-card-inner"><div class="vocab-front">'+v.es+'<small>'+v.note+'</small><span class="vocab-sound" aria-hidden="true">'+SPK+'</span></div>' +
+      '<div class="vocab-back">'+v.en+'<span class="vocab-ex">'+v.ex+'</span>' +
+      '<button type="button" class="vocab-replay" aria-label="Play again: '+v.es.replace(/"/g,'&quot;')+'">'+SPK+'</button></div></div>';
+    function flip(){
+      var now = card.classList.toggle('flipped');
+      if(now){ speak([v.es, v.ex]); flipped[key+i]=true; updateCompletion(); }
+    }
+    card.addEventListener('click', flip);
+    card.addEventListener('keydown', function(e){ if(e.key==='Enter' || e.key===' '){ e.preventDefault(); flip(); } });
+    card.querySelector('.vocab-replay').addEventListener('click', function(e){ e.stopPropagation(); speak([v.es, v.ex]); });
+    c.appendChild(card);
+  });
+}
+function flashTotal(){ var n=0; for(var k in FC) n+=FC[k].length; return n; }
+function flashDone(){ return Object.keys(flipped).length; }
+
+/* ── Fill-in blanks ── */
+/* data-answer may hold alternatives separated by | ; accents are forgiven but flagged */
+function answersOf(el){ return (el.getAttribute('data-answer')||'').split('|'); }
+function blankOk(el){ var v=normalize(el.value); return v!=='' && answersOf(el).some(function(a){ return normalize(a)===v; }); }
+function blankExact(el){ var v=(el.value||'').trim().toLowerCase().replace(/\s+/g,' '); return answersOf(el).some(function(a){ return a.toLowerCase()===v; }); }
+function checkBlanks(idsCSV, resultId){
+  var ids = idsCSV.split(','), correct = 0, total = ids.length, accents = [];
+  ids.forEach(function(id){
+    var el = document.getElementById(id); if(!el) return;
+    el.classList.remove('ok','ng');
+    if(blankOk(el)){ el.classList.add('ok'); correct++; if(!blankExact(el)) accents.push(answersOf(el)[0]); }
+    else el.classList.add('ng');
+  });
+  var msg = document.getElementById(resultId);
+  if(msg){
+    var acc = accents.length ? ' Ojo con los acentos: '+accents.join(', ')+'.' : '';
+    if(correct===total){ msg.textContent='¡Perfecto! '+correct+' / '+total+' correctas. ✓'+acc; msg.className='res-msg ok'; }
+    else { msg.textContent=correct+' / '+total+' correctas. Revisa las marcadas en rojo.'+acc; msg.className='res-msg ng'; }
+  }
+  updateCompletion();
+}
+function resetBlanks(idsCSV, resultId){
+  idsCSV.split(',').forEach(function(id){ var el=document.getElementById(id); if(el){ el.value=''; el.classList.remove('ok','ng'); } });
+  var msg=document.getElementById(resultId); if(msg){ msg.textContent=''; msg.className='res-msg'; }
+  updateCompletion();
+}
+
+/* ── Multiple-choice engine ── */
+var quizState = {}, MC_SETS = {}, MC_MSG = { se:'rs3', emo:'rs4', part:'rs6', llo:'rsLlo', cad:'rsCad', sig:'rsSig', rev:'rsRev' };
+function buildMC(data, key, containerId){
+  var container = document.getElementById(containerId); if(!container) return;
+  container.innerHTML='';
+  quizState[key] = data.map(function(){ return null; }); MC_SETS[key] = data;
+  data.forEach(function(item, i){
+    var div = document.createElement('div');
+    div.className = 'quiz-item'; div.id = key+'_item_'+i;
+    var head = '<div class="quiz-q"><span class="qnum">'+(i+1)+'.</span>'+item.q+'</div><div class="quiz-gloss">'+item.gloss+'</div>';
+    var opts = item.options.map(function(opt, j){
+      return '<button type="button" class="quiz-opt" id="'+key+'_'+i+'_'+j+'" onclick="pickMC(\''+key+'\','+i+','+j+')"><span class="letter">'+'ABCD'[j]+'</span><span>'+opt+'</span></button>';
+    }).join('');
+    div.innerHTML = head + '<div class="quiz-options">'+opts+'</div><div class="quiz-explain" id="'+key+'_exp_'+i+'"></div>';
+    container.appendChild(div);
+  });
+}
+function pickMC(key, i, j){
+  if(MC_SETS[key].instant && quizState[key][i]!==null) return;
+  quizState[key][i] = j;
+  MC_SETS[key][i].options.forEach(function(_, k){ document.getElementById(key+'_'+i+'_'+k).classList.toggle('selected', k===j); });
+  if(MC_SETS[key].instant){ revealMC(key, i); instantMsg(key); }
+  updateCompletion();
+}
+function revealMC(key, i){
+  var item = MC_SETS[key][i], chosen = quizState[key][i], ok = chosen===item.answer;
+  item.options.forEach(function(_, j){ var btn=document.getElementById(key+'_'+i+'_'+j); btn.classList.remove('is-correct','is-wrong'); if(j===item.answer) btn.classList.add('is-correct'); else if(j===chosen) btn.classList.add('is-wrong'); });
+  var exp = document.getElementById(key+'_exp_'+i); exp.className='quiz-explain show';
+  exp.innerHTML = '<strong>'+(ok?'✓ ¡Correcto!':'✗ No exactamente.')+'</strong> '+item.explain;
+  document.getElementById(key+'_item_'+i).className='quiz-item '+(ok?'correct':'wrong');
+  return ok;
+}
+function resetMC(key){
+  var data = MC_SETS[key]; quizState[key] = data.map(function(){ return null; });
+  data.forEach(function(item, i){ item.options.forEach(function(_, j){ document.getElementById(key+'_'+i+'_'+j).className='quiz-opt'; }); document.getElementById(key+'_exp_'+i).className='quiz-explain'; document.getElementById(key+'_item_'+i).className='quiz-item'; });
+}
+function mcCorrect(key){ var c=0; MC_SETS[key].forEach(function(it,i){ if(quizState[key][i]===it.answer) c++; }); return c; }
+function instantMsg(key){
+  var data=MC_SETS[key], answered = quizState[key].filter(function(x){return x!==null;}).length;
+  if(answered===data.length){ var c=mcCorrect(key); setMsg(MC_MSG[key], c===data.length, c+' / '+data.length+' correctas.'+(c===data.length?' ¡Perfecto! ✓':'')); }
+}
+
+function buildMatch(key){
+  var M = MATCH[key], c = document.getElementById(M.cont);
+  var order = M.data.map(function(_, i){ return i; });
+  for(var k=order.length-1;k>0;k--){ var r=Math.floor(Math.random()*(k+1)); var t=order[k]; order[k]=order[r]; order[r]=t; }
+  var aHtml = M.data.map(function(m, i){ return '<div class="mi" role="button" tabindex="0" data-side="a" data-idx="'+i+'" onclick="selMatch(\''+key+'\',this)">'+(i+1)+'. '+m.a+'</div>'; }).join('');
+  var bHtml = order.map(function(idx){ return '<div class="mi" role="button" tabindex="0" data-side="b" data-idx="'+idx+'" onclick="selMatch(\''+key+'\',this)">'+M.data[idx].b+'</div>'; }).join('');
+  c.innerHTML = '<div class="match-cols"><div><div class="match-col-label">'+M.labels[0]+'</div>'+aHtml+'</div><div><div class="match-col-label">'+M.labels[1]+'</div>'+bHtml+'</div></div>';
+  M.selA=null; M.selB=null; M.matched=0; M.finished=false;
+  document.getElementById(M.msg).textContent=''; document.getElementById(M.msg).className='res-msg';
+  updateCompletion();
+}
+function selMatch(key, el){
+  var M = MATCH[key]; if(el.classList.contains('done')) return;
+  var side = el.dataset.side;
+  document.querySelectorAll('#'+M.cont+' .mi[data-side='+side+']').forEach(function(i){ i.classList.remove('sel','bad'); });
+  el.classList.add('sel'); if(side==='a') M.selA=el; else M.selB=el;
+  if(!M.selA || !M.selB) return;
+  if(M.selA.dataset.idx === M.selB.dataset.idx){
+    M.selA.classList.remove('sel'); M.selA.classList.add('done'); M.selB.classList.remove('sel'); M.selB.classList.add('done'); M.matched++;
+    if(M.matched===M.data.length){ M.finished=true; setMsg(M.msg, true, M.done+M.matched+M.noun); }
+  } else { var bad=M.selB; bad.classList.add('bad'); setTimeout(function(){ bad.classList.remove('bad','sel'); }, 700); }
+  M.selA=null; M.selB=null; updateCompletion();
+}
+document.addEventListener('keydown', function(e){ if((e.key==='Enter'||e.key===' ') && e.target && e.target.classList && e.target.classList.contains('mi')){ e.preventDefault(); e.target.click(); } });
+
+var gIdx=0, gScore=0, gStreak=0, gFinished=false, gLock=false;
+function startGame(){
+  gIdx=0; gScore=0; gStreak=0; gFinished=false; gLock=false;
+  document.getElementById('gScore').textContent='0'; document.getElementById('gStreak').textContent='0';
+  document.getElementById('gFb').textContent=''; document.getElementById('gFb').className='game-feedback';
+  showGameQ(); updateCompletion();
+}
+function showGameQ(){
+  var q = gameData[gIdx];
+  document.getElementById('gNum').textContent = (gIdx+1)+'/'+gameData.length;
+  document.getElementById('gPrompt').textContent = q.p;
+  document.getElementById('gSub').textContent = 'Choose the missing word ('+q.h+').';
+  var opts = q.o.slice();
+  for(var k=opts.length-1;k>0;k--){ var r=Math.floor(Math.random()*(k+1)); var t=opts[k]; opts[k]=opts[r]; opts[r]=t; }
+  document.getElementById('gOpts').innerHTML = opts.map(function(o){ return '<button type="button" class="game-opt" onclick="pickGame(this,\''+o.replace(/'/g,"\\'")+'\')">'+o+'</button>'; }).join('');
+  gLock=false;
+}
+function pickGame(el, choice){
+  if(gLock) return; gLock=true;
+  var q = gameData[gIdx], fb = document.getElementById('gFb'), full = q.p.replace('___', q.a);
+  var ok = choice === q.a;
+  document.querySelectorAll('#gOpts .game-opt').forEach(function(b){ if(b.textContent===q.a) b.classList.add('is-correct'); });
+  if(ok){ gScore++; gStreak++; fb.textContent='✓ ¡Correcto! '+full; fb.className='game-feedback ok'; }
+  else { gStreak=0; el.classList.add('is-wrong'); fb.textContent='✗ '+full; fb.className='game-feedback ng'; }
+  document.getElementById('gScore').textContent=gScore; document.getElementById('gStreak').textContent=gStreak;
+  setTimeout(function(){
+    gIdx++;
+    if(gIdx < gameData.length){ showGameQ(); }
+    else { gFinished=true; document.getElementById('gPrompt').innerHTML='<span class="game-done">¡Fin! '+gScore+' / '+gameData.length+'</span>'; document.getElementById('gSub').textContent = gScore===gameData.length?'¡Perfecto! Dominas el capítulo 8.1.':'Pulsa "Restart Game" para intentarlo de nuevo.'; document.getElementById('gOpts').innerHTML=''; document.getElementById('gNum').textContent=gameData.length+'/'+gameData.length; }
+    updateCompletion();
+  }, 1100);
+}
+
+function updateScore(){ var s=computeScore(); var pct=s.total?Math.round(s.correct/s.total*100):0; var el=document.getElementById('completionScore'); if(el) el.textContent='★ '+pct+'% correcto'; }
+function escapeHtml(str){ return (str==null?'':String(str)).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;'); }
+function stripTags(html){ var dv=document.createElement('div'); dv.innerHTML=html||''; return (dv.textContent||'').replace(/\s+/g,' ').trim(); }
+function reportTable(title, scoreText, groups){
+  var blocks = groups.map(function(g){
+    var rows = g.items.map(function(it){ return '<tr class="'+(it.value?(it.ok?'ok':'bad'):'blank')+'"><td class="num">'+escapeHtml(it.label)+'</td><td>'+(it.value?escapeHtml(it.value):'<span class="blanktxt">(en blanco)</span>')+'</td><td class="note">'+escapeHtml(it.msg||'')+'</td><td class="mark">'+(it.value?(it.ok?'✓':'✗'):'·')+'</td></tr>'; }).join('');
+    return '<h3>'+escapeHtml(g.heading)+'</h3><table><tbody>'+rows+'</tbody></table>';
+  }).join('');
+  return (title?'<h2>'+escapeHtml(title)+'<span class="score">'+escapeHtml(scoreText)+'</span></h2>':'')+blocks;
+}
+function collectBlanks(prefix, n, heading){
+  var items=[], correct=0;
+  for(var i=1;i<=n;i++){ var el=document.getElementById(prefix+i); if(!el) continue; var v=(el.value||'').trim(), expected=answersOf(el).join(' / '); var ok=blankOk(el); if(ok) correct++; items.push({ label:String(i), value:v, ok:ok, msg: ok?(blankExact(el)?'Correcto.':'Correcto. Acento: '+answersOf(el)[0]):'Respuesta: '+expected }); }
+  return { heading:heading, items:items, correct:correct, total:items.length };
+}
+function mcItemsFor(key, data){ return data.map(function(item, i){ var ch=quizState[key][i]; return { label:String(i+1), value: ch===null?'':stripTags(item.options[ch]), ok: ch===item.answer, msg: ch===item.answer?'Correcto.':'Correcta: '+stripTags(item.options[item.answer]) }; }); }
+var BLANK_SETS = [["e1_", 8, "Ej 1 · u-stem"], ["e2_", 8, "Ej 2 · i-stem y j-stem"], ["e5_", 10, "Ej 5 · Una cita desastrosa"], ["e7_", 6, "Ej 7 · verbos de relaciones"], ["r1_", 5, "Leyenda 1 · B · los sentimientos de María"], ["r3_", 5, "Leyenda 3 · B · pretérito irregular"]];
+/* ── Flashcards ── */
+var FC = {
+  feel: [
+    {es:'alegre', note:'feliz', en:'cheerful, happy', ex:'Tomás estaba alegre después de la fiesta.'},
+    {es:'contento/a', note:'estar', en:'glad, pleased', ex:'Estoy contenta con mi nota.'},
+    {es:'triste', note:'la tristeza', en:'sad', ex:'María estaba muy triste.'},
+    {es:'asustado/a', note:'asustar', en:'scared, frightened', ex:'Mi tío estaba asustado en el camino.'},
+    {es:'decepcionado/a', note:'la decepción', en:'disappointed', ex:'Estuve decepcionado con el examen.'},
+    {es:'orgulloso/a', note:'el orgullo', en:'proud', ex:'Mi abuela está orgullosa de mí.'},
+    {es:'nervioso/a', note:'los nervios', en:'nervous', ex:'Estaba nervioso antes de la cita.'},
+    {es:'enojado/a', note:'enojarse', en:'angry', ex:'Mi papá estaba enojado conmigo.'},
+    {es:'avergonzado/a', note:'la vergüenza', en:'embarrassed, ashamed', ex:'Estaba avergonzada porque me caí.'},
+    {es:'celoso/a', note:'los celos', en:'jealous', ex:'Su novio estaba celoso.'},
+    {es:'sorprendido/a', note:'la sorpresa', en:'surprised', ex:'Quedé sorprendido con la noticia.'},
+    {es:'preocupado/a', note:'preocuparse', en:'worried', ex:'Mi mamá estaba preocupada por mí.'}
+  ],
+  rel: [
+    {es:'prestar', note:'le presto', en:'to lend', ex:'Le presté mi carro a mi hermano.'},
+    {es:'pedir prestado', note:'e → i', en:'to borrow (ask to borrow)', ex:'Mi amiga me pidió prestado un libro.'},
+    {es:'deber', note:'te debo', en:'to owe; must, should', ex:'Te debo veinte dólares.'},
+    {es:'dejar', note:'dejé', en:'to leave (behind); to let', ex:'Dejé las llaves en casa.'},
+    {es:'llevarse bien / mal', note:'con alguien', en:'to get along well / badly', ex:'Me llevo bien con mi hermana.'},
+    {es:'confiar en', note:'confío', en:'to trust', ex:'Confío en mi mejor amigo.'},
+    {es:'pelearse', note:'reflexivo', en:'to fight, to argue', ex:'Mis primos se pelearon ayer.'},
+    {es:'perdonar', note:'el perdón', en:'to forgive', ex:'Por fin la perdoné.'},
+    {es:'la pareja', note:'el novio, la novia', en:'couple; partner', ex:'Mis abuelos son una pareja muy feliz.'},
+    {es:'la amistad', note:'el amigo', en:'friendship', ex:'Nuestra amistad es muy importante.'}
+  ],
+  se: [
+    {es:'ser aburrido/a', note:'ser', en:'to be boring', ex:'La película es aburrida.'},
+    {es:'estar aburrido/a', note:'estar', en:'to be bored', ex:'Estoy aburrido en casa.'},
+    {es:'ser listo/a', note:'ser', en:'to be smart, clever', ex:'Mi hermana es muy lista.'},
+    {es:'estar listo/a', note:'estar', en:'to be ready', ex:'¿Estás lista? Nos vamos.'},
+    {es:'ser malo/a', note:'ser', en:'to be bad, evil', ex:'El Cadejo negro es malo.'},
+    {es:'estar malo/a', note:'estar', en:'to be sick; to taste bad', ex:'Estoy malo, no voy a clase.'},
+    {es:'ser rico/a', note:'ser', en:'to be rich', ex:'El esposo de María era rico.'},
+    {es:'estar rico/a', note:'estar', en:'to be delicious', ex:'¡Las pupusas están ricas!'}
+  ],
+  story: [
+    {es:'había una vez', note:'cuento', en:'once upon a time', ex:'Había una vez una niña muy curiosa.'},
+    {es:'cuentan que', note:'leyenda', en:'they say that', ex:'Cuentan que la Llorona camina por el río.'},
+    {es:'primero', note:'orden', en:'first', ex:'Primero, escuchó unos pasos.'},
+    {es:'luego', note:'orden', en:'then, later', ex:'Luego, vio un perro negro.'},
+    {es:'de repente', note:'cambio', en:'suddenly', ex:'De repente, apareció un perro blanco.'},
+    {es:'en ese momento', note:'cambio', en:'at that moment', ex:'En ese momento, tuvo mucho miedo.'},
+    {es:'al final', note:'final', en:'in the end', ex:'Al final, llegó a su casa.'},
+    {es:'desde entonces', note:'final', en:'since then', ex:'Desde entonces, nunca sale de noche.'},
+    {es:'la leyenda', note:'el cuento', en:'legend', ex:'La Siguanaba es una leyenda salvadoreña.'},
+    {es:'el espíritu', note:'el fantasma', en:'spirit, ghost', ex:'Su espíritu camina cerca del río.'}
+  ],
+  pret: [
+    {es:'estar → estuve', note:'u-stem', en:'I was (for a time)', ex:'Estuve en casa todo el día.'},
+    {es:'tener → tuve', note:'u-stem', en:'I had; I got', ex:'Tuve miedo en el camino.'},
+    {es:'poder → pude', note:'u-stem', en:'I managed to', ex:'Por fin pude dormir.'},
+    {es:'saber → supe', note:'u-stem', en:'I found out', ex:'Ayer supe la verdad.'},
+    {es:'querer → quise', note:'i-stem', en:'I tried; (no quise = I refused)', ex:'Quise llamarte, pero no pude.'},
+    {es:'venir → vine', note:'i-stem', en:'I came', ex:'Vine a clase en autobús.'},
+    {es:'decir → dije', note:'j-stem', en:'I said, I told', ex:'Le dije la verdad a mi mamá.'},
+    {es:'traer → traje', note:'j-stem', en:'I brought', ex:'Traje pupusas para todos.'}
+  ]
+};
+
+/* ── Ejercicio 3 · ser o estar ── */
+var SE=['es','está'];
+var seData = [
+  ['Esta película <u>___</u> muy aburrida. <em>(boring)</em>',0,'Boring = a characteristic → <strong>ser</strong>: es aburrida.'],
+  ['Mi hermano <u>___</u> aburrido en casa. <em>(bored)</em>',1,'Bored = how he feels now → <strong>estar</strong>: está aburrido.'],
+  ['Mi prima <u>___</u> muy lista: saca buenas notas. <em>(smart)</em>',0,'Smart = a characteristic → <strong>ser</strong>: es lista.'],
+  ['La cena <u>___</u> lista. ¡A comer! <em>(ready)</em>',1,'Ready = a state right now → <strong>estar</strong>: está lista.'],
+  ['El Cadejo negro <u>___</u> malo. <em>(evil)</em>',0,'Evil = a characteristic → <strong>ser</strong>: es malo.'],
+  ['Mi papá <u>___</u> malo hoy y no fue a trabajar. <em>(sick)</em>',1,'Sick = a temporary state → <strong>estar</strong>: está malo.'],
+  ['La familia del novio <u>___</u> muy rica. <em>(rich)</em>',0,'Rich = a characteristic → <strong>ser</strong>: es rica.'],
+  ['¡Esta sopa <u>___</u> muy rica! <em>(delicious)</em>',1,'Delicious = how it tastes now → <strong>estar</strong>: está rica.']
+].map(function(x){ return { q:x[0], gloss:'¿ser o estar?', options:SE, answer:x[1], explain:x[2] }; });
+seData.instant = true;
+
+/* ── Ejercicio 4 · estado o cambio ── */
+var emoData = [
+  { q:'Antes del examen, yo <u>___</u> muy nervioso.', gloss:'antes del examen · ongoing', options:['estaba','estuve'], answer:0, explain:'How I felt before (the scene) → imperfect: <strong>estaba</strong>.' },
+  { q:'Cuando vi el perro negro, de repente <u>___</u> miedo.', gloss:'de repente · reaction', options:['tenía','tuve'], answer:1, explain:'A sudden reaction → preterite: <strong>tuve</strong> miedo (I got scared).' },
+  { q:'Mi abuela siempre <u>___</u> orgullosa de mí.', gloss:'siempre · ongoing', options:['estaba','estuvo'], answer:0, explain:'An ongoing feeling (siempre) → imperfect: <strong>estaba</strong>.' },
+  { q:'Después de la mala noticia, <u>___</u> triste toda la semana.', gloss:'toda la semana · closed period', options:['estaba','estuve'], answer:1, explain:'A period with a clear end (toda la semana) → preterite: <strong>estuve</strong>.' },
+  { q:'María <u>___</u> enamorada de un hombre rico.', gloss:'description', options:['estaba','estuvo'], answer:0, explain:'Background of the story → imperfect: <strong>estaba</strong> enamorada.' },
+  { q:'En ese momento, Tomás <u>___</u> la verdad: ¡era la Siguanaba!', gloss:'en ese momento · found out', options:['sabía','supo'], answer:1, explain:'Supo = found out (one moment) → preterite: <strong>supo</strong>.' }
+];
+emoData.instant = true;
+
+/* ── Ejercicio 6 · estructura ── */
+var PARTS=['Exposición','Complicación','Resolución'];
+var partData = [
+  ['Había una vez un pueblo pequeño donde todos se conocían.',0],['De repente, escuchamos un grito en el bosque.',1],
+  ['Al final, todos volvimos a casa sanos y salvos.',2],['Era una noche fría y no había luna.',0],
+  ['En ese momento, el perro empezó a correr hacia nosotros.',1],['Desde entonces, nunca camino solo de noche.',2]
+].map(function(x){ return { q:x[0], gloss:'¿qué parte?', options:PARTS, answer:x[1], explain:['The <strong>exposition</strong> sets the scene, usually in the imperfect (había, era).','The <strong>complication</strong> is the problem: de repente, en ese momento + preterite.','The <strong>resolution</strong> is the ending: al final, desde entonces.'][x[1]] }; });
+partData.instant = true;
+
+/* ── Ejercicio 8 · short answer ── */
+var shortData = [
+  { q:'¿Qué tuviste que hacer ayer?', gloss:'What did you have to do yesterday?', minW:4, test:function(n){ return /\btuve que\b/.test(n); }, hint:'Usa «Tuve que + infinitivo».' },
+  { q:'¿Qué te dijo tu mejor amigo/a la última vez que hablaron?', gloss:'What did your best friend tell you?', minW:4, test:function(n){ return /\bme dijo\b/.test(n); }, hint:'Usa «Me dijo que…».' },
+  { q:'¿Qué trajiste a clase hoy?', gloss:'What did you bring to class today?', minW:3, test:function(n){ return /\btraje\b/.test(n); }, hint:'Usa «Traje…».' },
+  { q:'¿Cómo estabas antes de tu último examen? ¿Por qué?', gloss:'How did you feel before your last exam?', minW:4, test:function(n){ return /\bestaba\b/.test(n); }, hint:'Usa «Estaba nervioso/a, tranquilo/a…» (imperfecto).' },
+  { q:'Cuenta un cuento muy corto: ¿qué pasaba, qué pasó de repente y cómo terminó?', gloss:'Scene, complication, resolution.', minW:12, test:function(n, raw){ return impfTokens(raw).length>=1 && pretTokensW(raw).length>=1 && /\b(de repente|en ese momento)\b/.test(n) && /\b(al final|por fin|desde entonces)\b/.test(n); }, hint:'Incluye el imperfecto, el pretérito, «de repente» o «en ese momento», y «al final».' }
+];
+
+/* ── Leyendas ── */
+var CF=['Cierto','Falso'];
+var lloData = [
+  { q:'¿Cómo era María?', gloss:'párrafo 1', options:['Rica y fea.','Pobre y muy hermosa.','Rica y enojada.','Pobre y celosa.'], answer:1, explain:'«Vivía una mujer <strong>muy hermosa</strong>… <strong>Era pobre</strong>».' },
+  { q:'¿Por qué estaba triste y enojada María?', gloss:'párrafo 2', options:['Porque perdió su casa.','Porque su esposo la dejó por otra mujer.','Porque no tenía hijos.','Porque su familia era pobre.'], answer:1, explain:'«El hombre <strong>dejó a María por otra mujer</strong>».' },
+  { q:'María pudo encontrar a sus hijos.', gloss:'cierto o falso · párrafo 3', options:CF, answer:1, explain:'Falso: «los buscó toda la noche, pero <strong>no pudo</strong> encontrarlos».' },
+  { q:'¿Qué grita la Llorona?', gloss:'párrafo 3', options:['«¡Ay, mis hijos!»','«¡Ay, mi esposo!»','«¡Ven conmigo!»','«¡Tengo miedo!»'], answer:0, explain:'Llora: «<strong>¡Ay, mis hijos!</strong>».' },
+  { q:'¿Qué le decía su abuela al narrador?', gloss:'párrafo 4', options:['Que la Llorona no existe.','Que la Llorona lo podía llevar si salía solo de noche.','Que la Llorona era su amiga.','Que debía nadar en el río.'], answer:1, explain:'«Si sales solo de noche, <strong>la Llorona te puede llevar</strong>».' }
+];
+lloData.instant = true;
+var cadData = [
+  ['El Cadejo blanco protege a las personas.',0,'Cierto: «el blanco, que <strong>protege</strong> a las personas».'],
+  ['Esa noche hacía calor y había luna llena.',1,'Falso: «<strong>No había luna, hacía frío</strong>».'],
+  ['El tío Ernesto tuvo miedo y no pudo moverse.',0,'Cierto: «<strong>tuvo mucho miedo y no pudo moverse</strong>».'],
+  ['El perro negro caminó con el tío hasta su casa.',1,'Falso: fue el <strong>perro blanco</strong>.'],
+  ['Al día siguiente, el tío dijo que supo que el Cadejo blanco existe.',0,'Cierto: «Esa noche <strong>supe</strong> que el Cadejo blanco existe».']
+].map(function(x){ return { q:x[0], gloss:'cierto o falso', options:CF, answer:x[1], explain:x[2] }; });
+cadData.instant = true;
+var HUNT_TEXT = 'De repente, escuchó pasos detrás de él. Miró hacia atrás y descubrió un perro negro enorme. Mi tío tuvo mucho miedo y no pudo moverse. En ese momento, vino un perro blanco y se paró entre mi tío y el perro negro. Los dos perros pelearon y el perro negro desapareció. El perro blanco caminó con mi tío hasta la puerta de su casa. Cuando llegó, mi tío miró hacia atrás para darle las gracias, pero el perro ya no estaba. Al día siguiente, nos dijo a todos: «Esa noche supe que el Cadejo blanco existe».';
+var HUNT_TARGETS = ['tuvo','pudo','vino','dijo','supe'], HUNT_TOTAL = 5;
+var huntTokens=[], huntSel={}, huntChecked=false, huntScore=0;
+var sigData = [
+  ['Un viernes por la noche, Tomás regresaba de una fiesta. Estaba alegre y un poco distraído.',0],
+  ['Cerca del río, vio a una mujer de espaldas y quiso hablar con ella.',1],
+  ['Ella se volteó y Tomás vio que tenía cara de caballo.',1],
+  ['Al final, llegó a su casa al amanecer y nunca más caminó solo de noche.',2]
+].map(function(x){ return { q:x[0], gloss:'¿qué parte?', options:PARTS, answer:x[1], explain:['<strong>Exposición</strong>: the scene, in the imperfect (regresaba, estaba).','<strong>Complicación</strong>: the problem starts, in the preterite (vio, quiso, se volteó).','<strong>Resolución</strong>: the ending (al final, llegó, nunca más caminó).'][x[1]] }; });
+sigData.instant = true;
+
+/* ── Repaso final ── */
+var revData = [
+  ['5.1','¿A qué hora <u>___</u> tú? <em>(despertarse)</em>',['te despiertas','se despierta','te despertas','despiertas'],0,'Reflexive + e → ie: <strong>te despiertas</strong>.'],
+  ['5.1','Nosotros <u>___</u> en la cafetería. <em>(almorzar)</em>',['almuerzamos','almorzamos','almuerzan','almorzan'],1,'Nosotros has no stem change: <strong>almorzamos</strong>.'],
+  ['5.1','Mi hermano siempre <u>___</u> pizza. <em>(pedir)</em>',['pede','pida','pide','pidió siempre'],2,'e → i: <strong>pide</strong>.'],
+  ['5.1','Yo <u>___</u> al fútbol los sábados. <em>(jugar)</em>',['jugo','juego','juega','jugamos'],1,'u → ue: <strong>juego</strong>.'],
+  ['5.2','A mí me <u>___</u> las montañas.',['encanta','encanto','encantas','encantan'],3,'It agrees with <em>las montañas</em> (plural): <strong>encantan</strong>.'],
+  ['5.2','Hoy <u>___</u> mucho frío.',['es','hace','está','tiene'],1,'Weather: <strong>hace</strong> frío.'],
+  ['5.2','Mañana <u>___</u> estudiar para el examen.',['tengo','tener que','tengo que','tengo de'],2,'Obligation: <strong>tengo que</strong> + infinitive.'],
+  ['5.2','Marzo es el <u>___</u> mes del año.',['tercero','tres','tercera','tercer'],3,'Before a masculine noun, tercero → <strong>tercer</strong>.'],
+  ['6.1','Ayer yo <u>___</u> en la playa. <em>(nadar)</em>',['nadé','nade','nadó','nado'],0,'Regular preterite, yo: <strong>nadé</strong>.'],
+  ['6.1','¿<u>___</u> tú la cuenta en el restaurante? <em>(pagar)</em>',['Pagastes','Pagaste','Pagó','Pagué'],1,'tú: <strong>pagaste</strong> (no final s).'],
+  ['6.1','Mis padres <u>___</u> un hotel en Cancún. <em>(reservar)</em>',['reservamos','reservó','reservaron','reservieron'],2,'ellos: <strong>reservaron</strong>.'],
+  ['6.1','Yo <u>___</u> al aeropuerto a las ocho. <em>(llegar)</em>',['llegé','llegó','llego','llegué'],3,'Spelling change: g → gu: <strong>llegué</strong>.'],
+  ['6.2','El fin de semana pasado, ¿qué <u>___</u> tú? <em>(hacer)</em>',['hiciste','haciste','hizo','hicistes'],0,'hacer, tú: <strong>hiciste</strong>.'],
+  ['6.2','La fiesta <u>___</u> increíble. <em>(ser)</em>',['fui','fue','fueron','fuí'],1,'ser, ella: <strong>fue</strong> (no accent).'],
+  ['6.2','Ahora mismo, mi hermana está <u>___</u>. <em>(dormir)</em>',['dormiendo','duerme','durmiendo','dormida'],2,'o → u in the gerund: <strong>durmiendo</strong>.'],
+  ['6.2','Mañana nosotros <u>___</u> visitar a mis tíos.',['vamos','fuimos a','estamos a','vamos a'],3,'Future plan: <strong>vamos a</strong> + infinitive.'],
+  ['7.1','De niña, yo <u>___</u> en un pueblo pequeño. <em>(vivir)</em>',['vivía','viví','vivo','vivíamos'],0,'Description in the past → imperfect: <strong>vivía</strong>.'],
+  ['7.1','Antes jugaba al fútbol, pero <u>___</u> juego.',['todavía','ya no','siempre','nunca no'],1,'No longer → <strong>ya no</strong> + present.'],
+  ['7.1','Mis abuelos <u>___</u> en el campo todos los días. <em>(trabajar)</em>',['trabajábamos','trabajaba','trabajaban','trabajían'],2,'Habit, ellos → <strong>trabajaban</strong>.'],
+  ['7.1','The stage of life after <em>la madurez</em> is…',['la infancia','la juventud','la adolescencia','la vejez'],3,'<strong>la vejez</strong> = old age.'],
+  ['7.2','Cuando <u>___</u> niño, iba al parque. <em>(ser)</em>',['era','fui','estaba','eras'],0,'Age and description → imperfect: <strong>era</strong>.'],
+  ['7.2','Mientras yo dormía, <u>___</u> el teléfono. <em>(sonar)</em>',['sonaba','sonó','suena','sonaron'],1,'The interruption → preterite: <strong>sonó</strong>.'],
+  ['7.2','—¿Es tu carro? —Sí, es <u>___</u>.',['mía','mi','mío','míos'],2,'carro is masculine singular → <strong>mío</strong>.'],
+  ['7.2','Generalmente, nosotros <u>___</u> la tele después de cenar. <em>(ver)</em>',['vimos','víamos','veímos','veíamos'],3,'Habit → imperfect, ver keeps the e: <strong>veíamos</strong>.'],
+  ['8.1','Ayer no <u>___</u> ir a clase porque estaba enfermo. <em>(poder)</em>',['pude','podí','puedo','pudo'],0,'u-stem: <strong>pude</strong>.'],
+  ['8.1','Mis amigos <u>___</u> pizza a la fiesta. <em>(traer)</em>',['trajieron','trajeron','traieron','trajimos'],1,'j-stem, ellos: <strong>trajeron</strong> (no i).'],
+  ['8.1','¡Esta sopa <u>___</u> muy rica!',['es','estás','está','son'],2,'Delicious → <strong>estar</strong> rico.'],
+  ['8.1','¿Qué te <u>___</u> tu mamá ayer? <em>(decir)</em>',['dijió','dició','dice','dijo'],3,'j-stem, ella: <strong>dijo</strong>.']
+].map(function(x){ return { ch:x[0], q:x[1], gloss:'Capítulo '+x[0], options:x[2], answer:x[3], explain:x[4] }; });
+revData.instant = true;
+var REV_CH=['5.1','5.2','6.1','6.2','7.1','7.2','8.1'];
+function renderRevScore(){
+  var el=document.getElementById('rvScore'); if(!el || !quizState.rev) return;
+  el.innerHTML='<div class="rv-score-title">Tu resultado por capítulo</div>'+REV_CH.map(function(ch){ var idx=revData.map(function(q,i){ return q.ch===ch?i:-1; }).filter(function(i){ return i>=0; });
+    var ans=idx.filter(function(i){ return quizState.rev[i]!==null; }).length, ok=idx.filter(function(i){ return quizState.rev[i]===revData[i].answer; }).length;
+    var cls=ans<idx.length?'':(ok===idx.length?'good':(ok>=idx.length/2?'mid':'low'));
+    return '<span class="rv-pill '+cls+'">Cap '+ch+' · '+ok+' / '+idx.length+(ans<idx.length?' (sin terminar)':'')+'</span>'; }).join('');
+}
+
+/* ── Juegos ── */
+var quizData = [
+  { q:'Ayer yo <u>___</u> en casa todo el día. <em>(estar)</em>', gloss:'u-stem', options:['estuve','estaba','estuví','eství'], answer:0, explain:'A closed period (todo el día) → <strong>estuve</strong>.' },
+  { q:'¿<u>___</u> tú a la fiesta de Ana? <em>(venir)</em>', gloss:'i-stem', options:['Veniste','Viniste','Vinistes','Venías'], answer:1, explain:'venir → vin-: <strong>viniste</strong>.' },
+  { q:'Mis padres me <u>___</u> la verdad. <em>(decir)</em>', gloss:'j-stem', options:['dijieron','decieron','dijeron','dicieron'], answer:2, explain:'j-stem, ellos: <strong>dijeron</strong> (no i).' },
+  { q:'Anoche <u>___</u> que mi prima está embarazada. <em>(saber · found out)</em>', gloss:'meaning change', options:['sabía','sé','supiste','supe'], answer:3, explain:'Found out → preterite: <strong>supe</strong>.' },
+  { q:'"I am bored." →', gloss:'ser o estar', options:['Estoy aburrido.','Soy aburrido.','Estoy aburriendo.','Tengo aburrido.'], answer:0, explain:'Bored = a state → <strong>estar</strong> aburrido. (Soy aburrido = I am boring.)' },
+  { q:'"The food is ready." →', gloss:'ser o estar', options:['La comida es lista.','La comida está lista.','La comida es rica.','La comida tiene lista.'], answer:1, explain:'Ready → <strong>estar</strong> listo.' },
+  { q:'Cuando escuché el grito, de repente <u>___</u> miedo.', gloss:'reaction', options:['tenía','tengo','tuve','tenido'], answer:2, explain:'A sudden reaction → preterite: <strong>tuve</strong> miedo.' },
+  { q:'Mi amigo me <u>___</u> su bicicleta ayer. <em>(to lend)</em>', gloss:'relaciones', options:['pidió','debió','dejó','prestó'], answer:3, explain:'To lend = <strong>prestar</strong>: me prestó.' },
+  { q:'Which marker introduces the complication of a story?', gloss:'narración', options:['De repente','Había una vez','Al final','Desde entonces'], answer:0, explain:'<strong>De repente</strong> marks the problem or sudden change.' },
+  { q:'<em>Orgulloso/a</em> means…', gloss:'sentimientos', options:['jealous','proud','embarrassed','worried'], answer:1, explain:'<strong>orgulloso/a</strong> = proud.' }
+];
+function checkQuiz(){ var c=0; quizData.forEach(function(_, i){ if(revealMC('quiz', i)) c++; }); setMsg('rsQuiz', c===quizData.length, c+' / '+quizData.length+' correctas.'+(c===quizData.length?' ¡Perfecto! ✓':' Lee cada explicación.')); updateCompletion(); }
+function resetQuiz(){ resetMC('quiz'); document.getElementById('rsQuiz').className='res-msg'; document.getElementById('rsQuiz').textContent=''; updateCompletion(); }
+var MATCH = {
+  w: { cont:'matchCont', msg:'rsMatch', labels:['Español','English'], done:'¡Excelente! Emparejaste las ', noun:' palabras. ✓', matched:0, finished:false, selA:null, selB:null, data:[
+    {a:'alegre', b:'cheerful'}, {a:'asustado/a', b:'scared'}, {a:'decepcionado/a', b:'disappointed'}, {a:'orgulloso/a', b:'proud'}, {a:'avergonzado/a', b:'embarrassed'},
+    {a:'celoso/a', b:'jealous'}, {a:'preocupado/a', b:'worried'}, {a:'enojado/a', b:'angry'}, {a:'prestar', b:'to lend'}, {a:'deber', b:'to owe'}
+  ]},
+  m: { cont:'matchCont2', msg:'rsMatch2', labels:['Infinitivo','Yo · pretérito'], done:'¡Excelente! Emparejaste los ', noun:' verbos. ✓', matched:0, finished:false, selA:null, selB:null, data:[
+    {a:'estar', b:'estuve'}, {a:'tener', b:'tuve'}, {a:'poder', b:'pude'}, {a:'saber', b:'supe'}, {a:'querer', b:'quise'}, {a:'venir', b:'vine'}, {a:'decir', b:'dije'}, {a:'traer', b:'traje'}
+  ]}
+};
+var gameData = [
+  {p:'Ayer yo ___ que trabajar.', a:'tuve', o:['tuve','tení','tenía'], h:'tener · yo'},
+  {p:'¿Por qué no ___ a clase, Ana?', a:'viniste', o:['viniste','veniste','vinistes'], h:'venir · tú'},
+  {p:'Mis tíos ___ tamales a la fiesta.', a:'trajeron', o:['trajeron','trajieron','traeron'], h:'traer · ellos'},
+  {p:'Ella me ___ la verdad.', a:'dijo', o:['dijo','dijió','decía'], h:'decir · ella'},
+  {p:'Nosotros no ___ dormir anoche.', a:'pudimos', o:['pudimos','podimos','pudemos'], h:'poder · nosotros'},
+  {p:'Ayer ___ la noticia. (found out)', a:'supe', o:['supe','sabí','sabía'], h:'saber · yo'},
+  {p:'¡La sopa ___ muy rica!', a:'está', o:['está','es','son'], h:'delicious'},
+  {p:'Mi hermana ___ muy lista.', a:'es', o:['es','está','tiene'], h:'smart'},
+  {p:'Antes del examen, ___ nervioso.', a:'estaba', o:['estaba','estuve','estoy'], h:'ongoing state'},
+  {p:'De repente, ___ mucho miedo.', a:'tuve', o:['tuve','tenía','tengo'], h:'sudden reaction'},
+  {p:'Te ___ veinte dólares. (owe)', a:'debo', o:['debo','presto','dejo'], h:'deber'},
+  {p:'___, todos volvieron a casa.', a:'Al final', o:['Al final','Había una vez','De repente'], h:'resolution'}
+];
+
+function shuffle(a){ a=a.slice(); for(var k=a.length-1;k>0;k--){ var r=Math.floor(Math.random()*(k+1)); var t=a[k]; a[k]=a[r]; a[r]=t; } return a; }
+var NOT_IMPF = ('dia dias tia tias mia mias tuya todavia policia alegria energia compania cafeteria panaderia geografia biologia sofia maria lucia garantia via guia economia tecnologia fotografia filosofia sociologia psicologia ortografia poesia').split(' ');
+function impfTokens(raw){
+  var set={}; (raw||'').toLowerCase().replace(/[¿?¡!.,;:"()«»]/g,' ').split(/\s+/).filter(Boolean).forEach(function(t){
+    var p=t.normalize('NFD').replace(/[̀-ͯ]/g,'');
+    if(/^(era|eras|eramos|eran|iba|ibas|ibamos|iban|veia|veias|veiamos|veian)$/.test(p)){ set[t]=true; return; }
+    if(/[a-zñ]{2,}(aba|abas|abamos|aban)$/.test(p)){ set[t]=true; return; }
+    if(/[a-zñ]{1,}(ía|ías|íamos|ían)$/.test(t) && NOT_IMPF.indexOf(p)===-1) set[t]=true;
+  });
+  return Object.keys(set);
+}
+var PRET_IRREG = /^(fui|fuiste|fue|fuimos|fueron|hice|hiciste|hizo|hicimos|hicieron|vi|vio|vimos|vieron|viste|tuve|tuvo|tuvimos|tuvieron|estuve|estuvo|estuvimos|estuvieron|pude|pudo|pudimos|puse|puso|dije|dijo|vine|vino|quise|quiso|supe|supo|di|dio|dimos|dieron|conoci|conocio|naci|nacio)$/;
+function pretTokensW(raw){
+  var set={}; (raw||'').toLowerCase().replace(/[¿?¡!.,;:"()«»]/g,' ').split(/\s+/).filter(Boolean).forEach(function(t){
+    var p=t.normalize('NFD').replace(/[̀-ͯ]/g,'');
+    if(PRET_IRREG.test(p)){ set[t]=true; return; }
+    if(/[a-zñ]{2,}(é|ó|aste|amos|aron|í|iste|ió|imos|ieron)$/.test(t) && !/(aba|ía)/.test(t)) set[t]=true;
+  });
+  return Object.keys(set);
+}
+function buildShort(){
+  document.getElementById('shortCont').innerHTML = shortData.map(function(s, i){
+    return '<div style="margin-bottom:14px;"><label for="sa'+i+'" style="display:block;font-size:0.92rem;font-weight:700;color:var(--navy);">'+(i+1)+'. '+s.q+' <span style="font-weight:400;color:var(--text-hint);font-style:italic;font-size:0.82rem;">'+s.gloss+'</span></label><input class="task-input" id="sa'+i+'" placeholder="Escribe tu respuesta…" autocomplete="off"><div class="task-fb" id="fbsa'+i+'"></div></div>';
+  }).join('');
+}
+function gradeShort(i){
+  var s=shortData[i], v=val('sa'+i), w=wordsOf(v), n=w.join(' ');
+  if(!v) return { ok:false, msg:'Escribe tu respuesta.' };
+  if(w.length<s.minW) return { ok:false, msg:'Escribe una oración completa (mínimo '+s.minW+' palabras).' };
+  if(/\b(ibamos|eramos)\b/.test(v.toLowerCase())) return { ok:false, msg:'Revisa el acento: íbamos, éramos.' };
+  if(/\bveia(s|mos|n)?\b/.test(v.toLowerCase())) return { ok:false, msg:'Revisa el acento: veía.' };
+  if(!s.test(n, v)) return { ok:false, msg:s.hint };
+  return { ok:true, msg:'¡Bien! Respuesta completa.' };
+}
+function checkShort(){ var c=0; shortData.forEach(function(_, i){ var r=gradeShort(i); document.getElementById('sa'+i).style.borderBottomColor=r.ok?'var(--sage)':'var(--terracotta)'; showFb('fbsa'+i, r.ok, r.msg); if(r.ok) c++; }); setMsg('rs8', c===shortData.length, c+' / '+shortData.length+' respuestas válidas.'); updateCompletion(); }
+function resetShort(){ shortData.forEach(function(_, i){ var el=document.getElementById('sa'+i); el.value=''; el.style.borderBottomColor=''; clearFb('fbsa'+i); }); document.getElementById('rs8').className='res-msg'; document.getElementById('rs8').textContent=''; updateCompletion(); }
+
+/* ── Lecturas ── */
+function showReading(n, el){
+  [1,2,3].forEach(function(k){ document.getElementById('lect'+k).hidden = (k!==n); });
+  document.querySelectorAll('.le-btn').forEach(function(b){ b.classList.toggle('active', b===el); });
+  stopSpeak();
+}
+function speakEl(id){ var ps=[].slice.call(document.querySelectorAll('#'+id+' p:not(.gl)')).map(function(p){ return p.textContent; }); speak(ps); }
+var huntTokens=[], huntSel={}, huntChecked=false, huntScore=0;
+function buildHunt(){
+  huntTokens = HUNT_TEXT.split(/(\s+)/);
+  document.getElementById('huntText').innerHTML = huntTokens.map(function(t, i){
+    if(/^\s+$/.test(t)) return t;
+    var m=t.match(/^([¿¡«]*)(.*?)([.,:;!?»]*)$/);
+    return m[1]+'<span class="w" role="button" tabindex="0" data-i="'+i+'" onclick="toggleHunt('+i+')" onkeydown="if(event.key===\'Enter\'||event.key===\' \'){event.preventDefault();toggleHunt('+i+');}">'+m[2]+'</span>'+m[3];
+  }).join('');
+  huntSel={}; huntChecked=false; paintHunt();
+}
+function huntWord(i){ return normalize(huntTokens[i].replace(/[^A-Za-zÁÉÍÓÚáéíóúÑñ]/g,'')); }
+function isTarget(i){ return HUNT_TARGETS.indexOf(huntWord(i))!==-1; }
+function toggleHunt(i){ if(huntSel[i]) delete huntSel[i]; else huntSel[i]=true; huntChecked=false; paintHunt(); updateCompletion(); }
+function paintHunt(){
+  document.querySelectorAll('#huntText .w').forEach(function(el){ var i=+el.dataset.i, sel=!!huntSel[i], tgt=isTarget(i);
+    el.className='w'+(huntChecked?(sel&&tgt?' hit':(sel?' miss':(tgt?' lost':''))):(sel?' sel':'')); });
+  document.getElementById('huntCount').textContent=Object.keys(huntSel).length+' seleccionadas';
+}
+function checkHunt(){
+  huntChecked=true; paintHunt();
+  var keys=Object.keys(huntSel), found=keys.filter(function(i){ return isTarget(+i); }).length, wrong=keys.length-found;
+  huntScore=Math.max(0, found-wrong);
+  setMsg('rsHunt', found===HUNT_TOTAL && !wrong, found+' / '+HUNT_TOTAL+' found'+(wrong?' · '+wrong+' not an irregular preterite (red)':'')+(found<HUNT_TOTAL?' · the dashed ones were missed':'')+(found===HUNT_TOTAL&&!wrong?' · ¡Perfecto! ✓':'.'));
+  updateCompletion();
+}
+function resetHunt(){ huntSel={}; huntChecked=false; huntScore=0; paintHunt(); document.getElementById('rsHunt').className='res-msg'; document.getElementById('rsHunt').textContent=''; updateCompletion(); }
+/* ══ Lee en voz alta · read-along practice (no microphone, does not count) ══ */
+var RA_TEXTS = [
+  { title:'Calentamiento · Una cita desastrosa', level:'Nivel 1', paras:[
+      'Era un sábado de octubre y yo estaba muy nervioso. Primero, fui a la casa de Laura en autobús. Le traje flores, pero ella es alérgica.',
+      'Mientras cenábamos, mi exnovia entró al restaurante. De repente, vino a nuestra mesa. En ese momento, Laura supo la verdad. Quise explicarle todo, pero no pude. Al final, tuve que pagar la cena solo.'],
+    keys:['nervioso','autobús','traje','alérgica','cenábamos','exnovia','vino','supo','quise','tuve'] },
+  { title:'Calentamiento · El bolero', level:'Nivel 2', paras:[
+      'El bolero nació en Santiago de Cuba a finales del siglo diecinueve. Después, llegó a México y se convirtió en la gran canción romántica del siglo veinte.',
+      'Los boleros hablan de amor, de celos, de nostalgia y de decepción. Mis abuelos siempre escuchaban boleros en la radio. Cuando yo era niño, mi abuela me dijo: «Con un bolero, tu abuelo me enamoró».'],
+    keys:['bolero','Santiago','siglo','romántica','celos','nostalgia','decepción','escuchaban','dijo','enamoró'] },
+  { title:'Leyenda 1 · La Llorona', level:'Nivel 2', from:'reading1',
+    keys:['cuentan','hermosa','enamorada','tuvieron','controlarse','corriente','entendió','quiso','espíritu','llora'] },
+  { title:'Leyenda 2 · El Cadejo', level:'Nivel 2', from:'reading2',
+    keys:['Cadejo','misterioso','protege','asusta','oscuro','pasos','enorme','tuvo','desapareció','supe'] },
+  { title:'Leyenda 3 · La Siguanaba', level:'Nivel 3', from:'reading3',
+    keys:['Siguanaba','Sihuehuet','fiel','Tláloc','castigó','belleza','Cipitío','espaldas','acompañarla','amanecer'] }
+];
+var RA_SAY = {};
+var RA_SYL = [2.2, 2.8, 3.5, 4.3];          /* syllables per second for "Lee conmigo" */
+var RA_RATE = [0.65, 0.8, 0.95, 1.1];       /* speech rate for the voice */
+var RA_NAMES = ['Muy lenta','Lenta','Normal','Rápida'];
+var ra = { text:0, mode:'listen', speed:1, toks:[], sents:[], pos:0, playing:false, run:0, timer:null, tick:null, elapsed:0, t0:0, u:null, hasTTS:('speechSynthesis' in window) };
+
+function raSyl(w){
+  var s=(w||'').toLowerCase();
+  if(/^\d+$/.test(s)) return s.length>=4 ? 7 : s.length*2;
+  if(s==='y') return 1;
+  var g=s.match(/[aeiouáéíóúü]+/g)||[], n=0;
+  g.forEach(function(v){ n++; for(var i=1;i<v.length;i++){ var a=v[i-1], b=v[i]; if(/[íú]/.test(a)||/[íú]/.test(b)||(/[aeoáéó]/.test(a)&&/[aeoáéó]/.test(b))) n++; } });
+  return Math.max(1,n);
+}
+function raParas(t){
+  if(t.paras) return t.paras;
+  return [].slice.call(document.querySelectorAll('#'+t.from+' p:not(.gl)')).map(function(p){ return p.textContent.replace(/\s+/g,' ').trim(); });
+}
+function raBuild(){
+  raStop(true);
+  var t=RA_TEXTS[ra.text], box=document.getElementById('raText'), html=[], toks=[], sents=[], sStart=0;
+  raParas(t).forEach(function(par, pi){
+    var parts=par.split(' ').filter(Boolean), line=[];
+    parts.forEach(function(raw, wi){
+      var core=raw.replace(/^[¿¡«"(]+/,'').replace(/[.,;:!?»")…]+$/,''), tail=(raw.match(/[.,;:!?»")…]+$/)||[''])[0];
+      var last = wi===parts.length-1, endS = last || /[.!?…]/.test(tail);
+      var pause = endS ? 0.75 : (/[:;]/.test(tail) ? 0.5 : (/,/.test(tail) ? 0.35 : 0));
+      var spoken = RA_SAY[core] ? raw.replace(core, RA_SAY[core]) : raw;
+      var i=toks.length;
+      toks.push({ raw:raw, core:core, spoken:spoken, syl:raSyl(RA_SAY[core]||core), pause:pause, tail:tail, para:pi });
+      line.push('<span class="ra-w" data-i="'+i+'" role="button" tabindex="-1">'+escapeHtml(raw)+'</span>');
+      if(endS){ sents.push({ a:sStart, b:i }); sStart=i+1; }
+    });
+    html.push('<p>'+line.join(' ')+'</p>');
+  });
+  toks.forEach(function(k, i){ var nx=toks[i+1]; k.sent=0; k.link = !!(nx && nx.para===k.para && !k.tail && /^(h?[aeiouáéíóúy])/i.test(nx.raw) && !/^h(ie|ue)/i.test(nx.raw) && !/^y[aeiouáéíóú]/i.test(nx.raw) && !RA_SAY[nx.core]); });
+  sents.forEach(function(s, si){ for(var i=s.a;i<=s.b;i++) toks[i].sent=si; });
+  box.innerHTML=html.join('');
+  ra.toks=toks; ra.sents=sents; ra.pos=0; ra.elapsed=0;
+  box.querySelectorAll('.ra-w').forEach(function(el){ var k=toks[+el.dataset.i]; k.el=el; if(k.link) el.classList.add('lk'); el.addEventListener('click', function(){ raTap(+el.dataset.i); }); });
+  document.getElementById('raTitle').textContent=t.title+' · '+t.level;
+  document.getElementById('raKeys').innerHTML=t.keys.map(function(w){ return '<button type="button" class="ra-chip" onclick="raSay(\''+w.replace(/'/g,"\\'")+'\',0.75)">'+escapeHtml(w)+'</button>'; }).join('');
+  document.querySelectorAll('#raTexts .ra-chip').forEach(function(b, i){ b.classList.toggle('active', i===ra.text); });
+  document.getElementById('raDone').hidden=true; document.getElementById('raAdvice').textContent='';
+  raTurn(''); raPaint(); raStats();
+}
+function raPickText(i){ ra.text=i; raBuild(); }
+function raOpen(i){ ra.text=i; raBuild(); jumpTab('ra'); }
+function raSetMode(m){
+  if((m==='listen'||m==='echo') && !ra.hasTTS) return;
+  raStop(); ra.mode=m;
+  document.querySelectorAll('.ra-mode').forEach(function(b){ b.classList.toggle('active', b.dataset.m===m); });
+  raTurn('');
+}
+function raSetSpeed(s){ var was=ra.playing; raStop(); ra.speed=s; document.querySelectorAll('#raSpeed button').forEach(function(b){ b.classList.toggle('active', +b.dataset.s===s); }); if(was) raPlay(); }
+function raToggleLinks(){ document.getElementById('raText').classList.toggle('show-links', document.getElementById('raLinks').checked); }
+function raToggleBig(){ document.getElementById('raText').classList.toggle('big', document.getElementById('raBig').checked); }
+function raTurn(t){ var el=document.getElementById('raTurn'); el.textContent=t; el.className='ra-turn'+(t?' on':''); }
+
+/* painting */
+function raPaint(){ ra.toks.forEach(function(k, i){ k.el.classList.remove('cur','hear'); k.el.classList.toggle('read', i<ra.pos); }); }
+function raMark(i, cls){ var k=ra.toks[i]; if(!k) return; ra.toks.forEach(function(t){ t.el.classList.remove('cur','hear'); }); k.el.classList.add(cls||'cur'); raScroll(k.el); }
+function raScroll(el){ var box=document.getElementById('raText'), r=el.getBoundingClientRect(), b=box.getBoundingClientRect(); if(r.bottom>b.bottom-8 || r.top<b.top+8) box.scrollTop += (r.top-b.top) - box.clientHeight/3; }
+function raRead(i){ var k=ra.toks[i]; if(k){ k.el.classList.add('read'); } }
+function raStats(){
+  var n=ra.toks.length, d=Math.min(ra.pos,n), secs=Math.floor(ra.elapsed/1000);
+  document.getElementById('raCount').textContent=d+' / '+n;
+  document.getElementById('raTime').textContent=Math.floor(secs/60)+':'+String(secs%60).padStart(2,'0');
+  document.getElementById('raWpm').textContent = secs>=10 && d ? Math.round(d/(ra.elapsed/60000))+' pal/min' : '·';
+  document.getElementById('raProg').style.width=(n?Math.round(d/n*100):0)+'%';
+  var go=document.getElementById('raGo'); go.textContent = ra.playing ? '❚❚ Pausa' : ((ra.pos>0 || ra.elapsed>0) && ra.pos<n ? '▶ Seguir' : '▶ Empezar'); go.classList.toggle('on', ra.playing);
+}
+function raClock(on){
+  clearInterval(ra.tick);
+  if(on){ ra.t0=Date.now()-ra.elapsed; ra.tick=setInterval(function(){ ra.elapsed=Date.now()-ra.t0; raStats(); }, 250); }
+}
+
+/* timing model */
+function raDur(i, factor){ var k=ra.toks[i], sec=k.syl/RA_SYL[ra.speed] + k.pause*(1.25-ra.speed*0.15); return Math.max(260, sec*1000*(factor||1)); }
+function raSentDur(s){ var t=0; for(var i=s.a;i<=s.b;i++) t+=raDur(i); return t; }
+
+/* pacer: words turn green at a steady rhythm */
+function raPacer(from, to, factor, run, done){
+  var i=from;
+  (function step(){
+    if(run!==ra.run) return;
+    if(i>to){ done(); return; }
+    raMark(i,'cur'); ra.pos=i;
+    ra.timer=setTimeout(function(){ if(run!==ra.run) return; raRead(i); i++; ra.pos=i; raStats(); step(); }, raDur(i, factor));
+  })();
+}
+
+/* voice: one sentence at a time, highlighting each word as it is spoken */
+function raSpeakSent(si, cls, run, done){
+  var s=ra.sents[si], text='', offs=[];
+  for(var i=s.a;i<=s.b;i++){ offs.push(text.length); text+=ra.toks[i].spoken.replace(/[«»]/g,'')+' '; }
+  var synth=window.speechSynthesis; try{ synth.cancel(); }catch(e){}
+  var u=new SpeechSynthesisUtterance(text.trim()); ra.u=u;
+  u.lang=esVoice?esVoice.lang:'es-MX'; if(esVoice) u.voice=esVoice; u.rate=RA_RATE[ra.speed];
+  var gotB=false, started=0, est=[], acc=0, finished=false, safety, poll;
+  for(var j=s.a;j<=s.b;j++){ acc += (ra.toks[j].syl/(5.0*RA_RATE[ra.speed]) + ra.toks[j].pause*0.35)*1000; est.push(acc); }
+  function at(local){ var idx=s.a+local; raMark(idx, cls); if(cls==='cur'){ for(var r=s.a;r<idx;r++) raRead(r); ra.pos=idx; raStats(); } }
+  function finish(){
+    if(finished) return; finished=true; clearInterval(poll); clearTimeout(safety);
+    if(run!==ra.run) return;
+    var took=started?Date.now()-started:0, broken=!started || took<Math.max(300, acc*0.25);
+    if(broken){ for(var r0=s.a;r0<=s.b;r0++) ra.toks[r0].el.classList.remove('read','cur','hear'); ra.pos=s.a; raStats(); done(0, true); return; }
+    if(cls==='cur'){ for(var r=s.a;r<=s.b;r++) raRead(r); ra.pos=s.b+1; raStats(); }
+    else ra.toks.forEach(function(t){ t.el.classList.remove('hear'); });
+    done(took, false);
+  }
+  u.onstart=function(){ started=Date.now(); at(0);
+    poll=setInterval(function(){ if(gotB||run!==ra.run) return; var el=Date.now()-started, k=0; while(k<est.length-1 && el>est[k]) k++; at(k); }, 80); };
+  u.onboundary=function(e){ if(run!==ra.run) return; if(e.name && e.name!=='word') return; gotB=true; var c=e.charIndex, k=0; for(var q=0;q<offs.length;q++){ if(offs[q]<=c) k=q; } at(k); };
+  u.onend=finish; u.onerror=function(e){ if(e && (e.error==='interrupted'||e.error==='canceled')) return; finish(); };
+  safety=setTimeout(finish, acc*3+5000);
+  synth.speak(u);
+}
+
+/* modes */
+function raPlay(){
+  if(ra.pos>=ra.toks.length){ ra.pos=0; ra.elapsed=0; raPaint(); }
+  document.getElementById('raDone').hidden=true;
+  ra.playing=true; ra.run++; var run=ra.run; raClock(true);
+  var si=ra.toks[ra.pos].sent; ra.pos=ra.sents[si].a; raPaint();
+  if(ra.mode==='pace'){ raTurn('Lee en voz alta'); raPacer(ra.pos, ra.toks.length-1, 1, run, raFinish); }
+  else if(ra.mode==='listen'){ raTurn('Escucha y lee en voz baja');
+    (function next(k){ if(run!==ra.run) return; if(k>=ra.sents.length){ raFinish(); return; }
+      var go=function(){ setTimeout(function(){ next(k+1); }, 220); };
+      if(ra.ttsBroken){ raTurn('Lee en voz alta'); raPacer(ra.sents[k].a, ra.sents[k].b, 1, run, go); return; }
+      raSpeakSent(k, 'cur', run, function(took, broken){ if(broken){ raNoVoice(); raTurn('Lee en voz alta'); raPacer(ra.sents[k].a, ra.sents[k].b, 1, run, go); } else go(); }); })(si); }
+  else { (function next(k){ if(run!==ra.run) return; if(k>=ra.sents.length){ raFinish(); return; }
+      raTurn(ra.ttsBroken?'Tu turno · lee la oración':'Escucha…');
+      var after=function(took, broken){
+        if(run!==ra.run) return; if(broken) raNoVoice();
+        raTurn('Tu turno · lee la oración'); var s=ra.sents[k], model=raSentDur(s), f=took ? Math.max(0.8, (took*1.3)/model) : 1;
+        setTimeout(function(){ raPacer(s.a, s.b, f, run, function(){ setTimeout(function(){ next(k+1); }, 500); }); }, 350);
+      };
+      if(ra.ttsBroken) after(0, false); else raSpeakSent(k, 'hear', run, after); })(si); }
+  raStats();
+}
+function raStop(silent){
+  ra.run++; ra.playing=false; clearTimeout(ra.timer); raClock(false);
+  try{ if(ra.hasTTS) window.speechSynthesis.cancel(); }catch(e){}
+  if(ra.toks.length){ var si=ra.toks[Math.min(ra.pos, ra.toks.length-1)].sent; if(ra.pos<ra.toks.length) ra.pos=ra.sents[si].a; raPaint(); }
+  if(!silent && document.getElementById('raGo')) raStats();
+}
+function raToggle(){ if(ra.playing){ raStop(); raTurn('En pausa'); } else raPlay(); }
+function raRestart(){ raStop(); ra.pos=0; ra.elapsed=0; raPaint(); raTurn(''); document.getElementById('raDone').hidden=true; raStats(); document.getElementById('raText').scrollTop=0; }
+function raFinish(){
+  ra.playing=false; ra.run++; raClock(false); ra.pos=ra.toks.length; raPaint(); raTurn('¡Muy bien!'); raStats();
+  var secs=Math.round(ra.elapsed/1000), wpm=secs?Math.round(ra.toks.length/(secs/60)):0;
+  document.getElementById('raSummary').textContent='Leíste '+ra.toks.length+' palabras en '+Math.floor(secs/60)+':'+String(secs%60).padStart(2,'0')+' · '+RA_NAMES[ra.speed]+' · '+wpm+' palabras por minuto.';
+  document.getElementById('raAdvice').textContent=''; document.getElementById('raDone').hidden=false;
+}
+function raNoVoice(){ ra.ttsBroken=true; var w=document.getElementById('raWarn'); w.hidden=false; w.textContent='No Spanish voice is playing in this browser, so the words will turn green at a steady pace instead. Read out loud with them, or try Chrome or Edge to hear the voice.'; }
+function raSelf(n){
+  var tips=['Try Escucha y sigue at Muy lenta, and tap the words below to hear the hard ones. Then read it again: the second time is always easier.',
+    'Nice work. Try Escucha y repite to copy the rhythm and intonation, or read it again one speed faster.',
+    '¡Excelente! Move up one speed or try a longer lectura. Turn on enlaces ‿ to make your reading even smoother.'];
+  document.querySelectorAll('.ra-self button').forEach(function(b, i){ b.classList.toggle('active', i===n); });
+  document.getElementById('raAdvice').textContent=tips[n];
+}
+function raSay(w, rate){ if(!ra.hasTTS) return; try{ var s=window.speechSynthesis; s.cancel(); var u=new SpeechSynthesisUtterance(w); u.lang=esVoice?esVoice.lang:'es-MX'; if(esVoice) u.voice=esVoice; u.rate=rate||0.8; ra.u=u; s.speak(u); }catch(e){} }
+function raTap(i){
+  if(ra.playing) raStop();
+  var k=ra.toks[i]; ra.pos=ra.sents[k.sent].a; raPaint(); raMark(i,'cur'); raStats();
+  raSay(RA_SAY[k.core]||k.core, 0.75); raTurn('Empieza aquí con ▶');
+}
+
+function raInit(){
+  document.getElementById('raTexts').innerHTML=RA_TEXTS.map(function(t, i){ return '<button type="button" class="ra-chip" onclick="raPickText('+i+')"><b>'+escapeHtml(t.title)+'</b> <span>'+t.level+'</span></button>'; }).join('');
+  if(!ra.hasTTS){
+    document.querySelectorAll('.ra-mode[data-m=listen], .ra-mode[data-m=echo]').forEach(function(b){ b.disabled=true; });
+    ra.mode='pace'; document.querySelectorAll('.ra-mode').forEach(function(b){ b.classList.toggle('active', b.dataset.m==='pace'); });
+    var w=document.getElementById('raWarn'); w.hidden=false; w.textContent='Your browser has no Spanish voice, so the listening modes are off. Lee conmigo works everywhere: read out loud as the words turn green.';
+  } else {
+    setTimeout(function(){ try{ if(!ra.ttsBroken && !window.speechSynthesis.getVoices().length){ var w=document.getElementById('raWarn'); w.hidden=false; w.textContent='If you hear no voice, check your volume or try Chrome or Edge. Lee conmigo works without audio.'; } }catch(e){} }, 2000);
+  }
+  document.addEventListener('keydown', function(e){
+    if(e.code!=='Space' && e.key!==' ') return;
+    if(!document.getElementById('sec-ra').classList.contains('active')) return;
+    var tg=(e.target&&e.target.tagName)||''; if(/INPUT|TEXTAREA|BUTTON|SELECT|LABEL/.test(tg)) return;
+    e.preventDefault(); raToggle();
+  });
+  var sw=switchTab; switchTab=function(tab, el){ if(tab!=='ra' && ra.playing){ raStop(); raTurn('En pausa'); } stopSpeak(); sw(tab, el); };
+  raBuild();
+}
+
+
+/* ── Completion + score ── */
+function idsFilled(prefix, n){ var out=[]; for(var i=1;i<=n;i++) out.push(val(prefix+i).length>0); return out; }
+function mcAnswered(key){ return MC_SETS[key].map(function(_, i){ return quizState[key][i]!==null; }); }
+function blanksCorrect(prefix, n){ var c=0; for(var i=1;i<=n;i++){ var el=document.getElementById(prefix+i); if(el && blankOk(el)) c++; } return c; }
+var completionGroups = [
+  { label:'Nombre', tab:'ov', items:function(){ return [val('studentName').length>0]; } },
+  { label:'Vocabulario', tab:'vo', items:function(){ var a=[]; for(var i=0;i<flashTotal();i++) a.push(i<flashDone()); return a; } },
+  { label:'Ejercicios', tab:'ej', items:function(){ var a=[]; BLANK_SETS.slice(0,4).forEach(function(b){ a=a.concat(idsFilled(b[0],b[1])); }); return a.concat(mcAnswered('se'), mcAnswered('emo'), mcAnswered('part'), shortData.map(function(_, i){ return val('sa'+i).length>0; })); } },
+  { label:'Leyendas', tab:'le', items:function(){ return mcAnswered('llo').concat(idsFilled('r1_',BLANK_SETS[4][1]), mcAnswered('cad'), [huntChecked], mcAnswered('sig'), idsFilled('r3_',BLANK_SETS[5][1])); } },
+  { label:'Repaso final', tab:'rv', items:function(){ return mcAnswered('rev'); } },
+  { label:'Juegos', tab:'ju', items:function(){ return [MATCH.w.finished, MATCH.m.finished, gFinished].concat(mcAnswered('quiz')); } }
+];
+function completionStats(){ return completionGroups.map(function(g){ var a=g.items(); return { label:g.label, tab:g.tab, done:a.filter(Boolean).length, total:a.length }; }); }
+function computeScore(){
+  var correct=0, total=0;
+  BLANK_SETS.forEach(function(b){ correct+=blanksCorrect(b[0],b[1]); total+=b[1]; });
+  ['se','emo','part','llo','cad','sig','rev','quiz'].forEach(function(k){ correct+=mcCorrect(k); total+=MC_SETS[k].length; });
+  shortData.forEach(function(_, i){ if(val('sa'+i) && gradeShort(i).ok) correct++; }); total+=shortData.length;
+  correct+=huntScore; total+=HUNT_TOTAL;
+  correct+=MATCH.w.matched+MATCH.m.matched; total+=MATCH.w.data.length+MATCH.m.data.length;
+  correct+=gScore; total+=gameData.length;
+  return { correct:correct, total:total };
+}
+var READY=false;
+function updateCompletion(){
+  if(!READY) return;
+  var stats=completionStats(), d=0, t=0; stats.forEach(function(g){ d+=g.done; t+=g.total; });
+  var pct=t?Math.round(d/t*100):0;
+  document.getElementById('completionPct').textContent=pct+'%'; document.getElementById('pf').style.width=pct+'%';
+  document.getElementById('completionLegend').innerHTML=stats.map(function(g){ return '<button type="button" class="legend-pill '+(g.done===g.total?'done':'')+'" onclick="jumpTab(\''+g.tab+'\')">'+g.label+' '+g.done+'/'+g.total+'</button>'; }).join('');
+  updateScore();
+}
+function jumpTab(tab){ var btns=document.querySelectorAll('.tab'); for(var i=0;i<btns.length;i++){ if((btns[i].getAttribute('onclick')||'').indexOf("'"+tab+"'")!==-1){ switchTab(tab, btns[i]); return; } } switchTab(tab, null); }
+document.addEventListener('input', function(e){ updateCompletion(); });
+document.addEventListener('change', updateCompletion);
+
+/* ── Report ── */
+function buildReportHtml(name){
+  var stamp=new Date().toLocaleString('en-US',{ year:'numeric', month:'long', day:'numeric', hour:'2-digit', minute:'2-digit' });
+  var blanks=BLANK_SETS.map(function(b){ return collectBlanks(b[0], b[1], b[2]); });
+  var bc=0, bt=0; blanks.slice(0,4).forEach(function(g){ bc+=g.correct; bt+=g.total; });
+  var cnt=function(a){ return a.filter(function(x){return x.ok;}).length; };
+  var seItems=mcItemsFor('se', seData), emItems=mcItemsFor('emo', emoData), paItems=mcItemsFor('part', partData), llItems=mcItemsFor('llo', lloData), caItems=mcItemsFor('cad', cadData), siItems=mcItemsFor('sig', sigData), rvItems=mcItemsFor('rev', revData), qzItems=mcItemsFor('quiz', quizData);
+  rvItems.forEach(function(it, i){ it.label='Cap '+revData[i].ch; });
+  var saItems=shortData.map(function(s, i){ var v=val('sa'+i), r=gradeShort(i); return { label:s.q, value:v, ok:r.ok, msg:r.msg }; });
+  var huntItem=[{ label:'Caza de verbos', value:huntChecked?(huntScore+' / '+HUNT_TOTAL):'', ok:huntScore===HUNT_TOTAL, msg:huntChecked?(huntScore===HUNT_TOTAL?'¡Perfecto!':'Busca tuvo, pudo, vino, dijo, supe.'):'Sin hacer.' }];
+  var rvByCh=REV_CH.map(function(ch){ var idx=revData.map(function(q,i){ return q.ch===ch?i:-1; }).filter(function(i){ return i>=0; }); return 'Cap '+ch+': '+idx.filter(function(i){ return quizState.rev[i]===revData[i].answer; }).length+'/'+idx.length; }).join(' · ');
+  var gameItems=[{ label:'Juego 1 · Los sentimientos', value:MATCH.w.matched+' / '+MATCH.w.data.length, ok:MATCH.w.finished, msg:MATCH.w.finished?'Completado.':'Sin terminar.' },
+    { label:'Juego 2 · ¿Qué hiciste?', value:MATCH.m.matched+' / '+MATCH.m.data.length, ok:MATCH.m.finished, msg:MATCH.m.finished?'Completado.':'Sin terminar.' },
+    { label:'Juego 3 · Reto rápido', value:gFinished?(gScore+' / '+gameData.length):'', ok:gFinished&&gScore>=10, msg:gFinished?(gScore>=10?'¡Bien dominado!':'Practica un poco más.'):'Sin terminar.' }];
+  var s=computeScore(), sp=s.total?Math.round(s.correct/s.total*100):0;
+  var stats=completionStats(), cd=0, ct=0; stats.forEach(function(g){ cd+=g.done; ct+=g.total; }); var cp=ct?Math.round(cd/ct*100):0;
+  var compRows=stats.map(function(g){ return '<li class="'+(g.done===g.total?'checked':'')+'">'+(g.done===g.total?'☑':'☐')+' '+escapeHtml(g.label)+' · '+g.done+' / '+g.total+'</li>'; }).join('');
+  return '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Semana 9 · Reporte · '+escapeHtml(name)+'</title><style>'+
+  "body{font-family:Georgia,'Times New Roman',serif;color:#2A2118;max-width:850px;margin:0 auto;padding:40px 32px;line-height:1.6;}"+
+  'header{border-bottom:4px solid #C45D3A;padding-bottom:16px;margin-bottom:28px;} h1{font-size:1.6rem;color:#1B2A4A;margin:0 0 6px;}'+
+  ".meta{font-family:'Courier New',monospace;font-size:0.78rem;color:#6B5D4A;} .meta strong{color:#1B2A4A;}"+
+  '.summary{background:#FBF5EA;border-left:5px solid #D4A24C;padding:14px 18px;margin-bottom:28px;font-size:0.95rem;}'+
+  'h2{font-size:1.1rem;color:#1B2A4A;margin:32px 0 10px;border-left:5px solid #C45D3A;padding-left:12px;}'+
+  "h3{font-size:0.78rem;font-family:'Courier New',monospace;text-transform:uppercase;letter-spacing:0.06em;color:#6B5D4A;margin:18px 0 6px;font-weight:normal;}"+
+  ".score{font-family:'Courier New',monospace;font-size:0.72rem;font-weight:normal;color:#6B5D4A;display:block;padding-top:2px;}"+
+  'table{width:100%;border-collapse:collapse;font-size:0.86rem;margin-bottom:8px;} td{padding:8px 10px;border-bottom:1px solid #EDE2CE;vertical-align:top;}'+
+  "td.num{color:#6B5D4A;font-family:'Courier New',monospace;font-size:0.75rem;} td.note{font-size:0.78rem;color:#6B5D4A;font-style:italic;} td.mark{text-align:center;font-weight:bold;width:26px;}"+
+  'tr.ok{background:#F2F8EE;} tr.ok td.mark{color:#4C7A3C;} tr.bad{background:#FCF0EE;} tr.bad td.mark{color:#A8452A;}'+
+  '.para{background:#fff;border:1px solid #EDE2CE;border-radius:6px;padding:14px 18px;font-size:0.95rem;line-height:1.7;}'+
+  '.blanktxt{color:#A89A88;} ul.check{list-style:none;padding:0;font-size:0.9rem;} ul.check li{padding:5px 0;border-bottom:1px solid #F2EADB;} ul.check li.checked{color:#4C7A3C;}'+
+  "footer{margin-top:40px;border-top:1px solid #EDE2CE;padding-top:12px;font-family:'Courier New',monospace;font-size:0.68rem;color:#6B5D4A;}"+
+  '@media print{body{padding:0;}h2{page-break-after:avoid;}table{page-break-inside:avoid;}}'+
+  '</style></head><body>'+
+  '<header><h1>Spanish 122 · Semana 9 · Capítulo 8.1 · Relaciones y repaso</h1><p class="meta"><strong>Estudiante:</strong> '+escapeHtml(name)+' &nbsp;·&nbsp; <strong>Irregular Preterite &amp; Telling a Story</strong> &nbsp;·&nbsp; Generado: '+escapeHtml(stamp)+'</p></header>'+
+  '<div class="summary"><strong>Puntuación:</strong> '+s.correct+' / '+s.total+' correctas (<strong>'+sp+'%</strong>) · Página completada al <strong>'+cp+'%</strong> ('+cd+' / '+ct+' elementos)</div>'+
+  '<h2>Progreso por sección</h2><ul class="check">'+compRows+'</ul>'+
+  reportTable('Ejercicios 1, 2, 5 y 7 (fill-in)', bc+' / '+bt+' correctas', blanks.slice(0,4))+
+  reportTable('Ejercicio 3 · ¿Ser o estar?', cnt(seItems)+' / '+seItems.length+' correctas', [{ heading:'Cambio de significado', items:seItems }])+
+  reportTable('Ejercicio 4 · ¿Estado o cambio?', cnt(emItems)+' / '+emItems.length+' correctas', [{ heading:'Sentimientos', items:emItems }])+
+  reportTable('Ejercicio 6 · Estructura de la historia', cnt(paItems)+' / '+paItems.length+' correctas', [{ heading:'Exposición, complicación, resolución', items:paItems }])+
+  reportTable('Ejercicio 8 · Respuesta corta', cnt(saItems)+' / '+saItems.length+' válidas', [{ heading:'Tu historia', items:saItems }])+
+  reportTable('Leyenda 1 · La Llorona', (cnt(llItems)+blanks[4].correct)+' / '+(llItems.length+blanks[4].total)+' correctas', [{ heading:'A · Comprensión', items:llItems }, blanks[4]])+
+  reportTable('Leyenda 2 · El Cadejo', cnt(caItems)+' / '+caItems.length+' correctas · caza '+huntScore+' / '+HUNT_TOTAL, [{ heading:'A · ¿Cierto o falso?', items:caItems }, { heading:'B · Caza de verbos', items:huntItem }])+
+  reportTable('Leyenda 3 · La Siguanaba', (cnt(siItems)+blanks[5].correct)+' / '+(siItems.length+blanks[5].total)+' correctas', [{ heading:'A · Estructura', items:siItems }, blanks[5]])+
+  reportTable('Repaso final · Semanas 1 a 9', cnt(rvItems)+' / '+rvItems.length+' correctas · '+rvByCh, [{ heading:'28 preguntas', items:rvItems }])+
+  reportTable('Juegos', cnt(qzItems)+' / '+qzItems.length+' en el quiz', [{ heading:'Emparejamiento y reto', items:gameItems }, { heading:'Juego 4 · Opción múltiple', items:qzItems }])+
+  '<footer>South Puget Sound Community College · ESP 122 · Semana 9 · Para entregar como PDF, abre este archivo, imprime y elige Guardar como PDF.</footer></body></html>';
+}
+function downloadReport(){
+  var field=document.getElementById('studentName'), name=(field.value||'').trim();
+  if(!name){ field.focus(); field.style.borderColor='#A8452A'; field.placeholder='Escribe tu nombre primero · Please enter your name'; setTimeout(function(){ field.style.borderColor=''; },2500); return; }
+  var html=buildReportHtml(name), safe=name.replace(/[^a-z0-9]+/gi,'_').replace(/^_+|_+$/g,'')||'estudiante';
+  var blob=new Blob([html],{type:'text/html;charset=utf-8'}), url=URL.createObjectURL(blob), a=document.createElement('a');
+  a.href=url; a.download='Semana9_Cap8-1_'+safe+'.html'; document.body.appendChild(a); a.click(); document.body.removeChild(a); setTimeout(function(){ URL.revokeObjectURL(url); },1000);
+}
+
+/* ── Build everything ── */
+buildFlash('feel','fcFeel','time-card');
+buildFlash('rel','fcRel','carn-card');
+buildFlash('se','fcSE','nat-card');
+buildFlash('story','fcStory','sea-card');
+buildFlash('pret','fcPret','sport-card');
+buildMC(seData, 'se', 'seCont');
+buildMC(emoData, 'emo', 'emoCont');
+buildMC(partData, 'part', 'partCont');
+buildMC(lloData, 'llo', 'lloCont');
+buildMC(cadData, 'cad', 'cadCont');
+buildMC(sigData, 'sig', 'sigCont');
+buildMC(revData, 'rev', 'revCont');
+buildMC(quizData, 'quiz', 'quizCont');
+var _pickMC=pickMC; pickMC=function(k, i, j){ _pickMC(k, i, j); if(k==='rev') renderRevScore(); };
+buildHunt();
+buildMatch('w');
+buildMatch('m');
+buildShort();
+raInit();
+renderRevScore();
+READY = true;
+startGame();
+updateCompletion();
+
+</script>
+</body>
+</html>
